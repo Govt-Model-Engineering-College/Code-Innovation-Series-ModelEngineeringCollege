@@ -1,0 +1,30 @@
+               VIRTUAL HEALTH ASSISTANT
+                                      ~ Developed by Python Summoners
+
+When we are in need of a doctor we usually approach our near and dear ones who
+directs us to a doctor.But in reality ,this pandemic has separatd us from them.
+But there is no need to worry as we bring up before you
+"The Virtual Health Assistant", an easier way to make appointments with a
+doctor. By using our program we help you to minimise human contact by many ways,
+also this program is not just developed for the pandemic but can be used
+whenever necessary.
+Now more about our program:-
+      It consists of mainly two parts.
+
+      1) A personal patient assistant:-
+        The patient by entering his or her patient number is able to view their
+        personal information. Later they are asked to enter their symptoms.
+        According to their symptoms, they are directed to make an appointment
+        with the doctor of concerning department.Even they can decide on whether
+        to make an appointment or not.
+
+      2) An admin interface.
+        Admin interface is password protected.(Password for testing : admin@123)
+        Admin can add, edit, search and view patient's details.
+We have made the program using C++ language and can be run using
+the DOSBox Emulator.
+
+The presentation of this program can be accessed using the
+link - https://drive.google.com/file/d/1p8CRWOuq5LNkFr8tgADzCpiytrJOzxGc/view?usp=sharing
+The presentation is also provided along with the folder uploaded on GitHub.
+Thank you!
