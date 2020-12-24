@@ -1,0 +1,65 @@
+Description
+------------
+
+Due to the ongoing pandemic, the education system is one that has been gravely affected. 
+Schools and Teachers are also in the middle of meeting the social, emotional and academic needs of students during these challenging times.
+Correcting and grading answer sheets of students has been one of the tiring jobs for the educators.
+To solve that problem , we have CorrectEasy , a web application that is very easy to use and will help teachers in correcting the answersheets.
+The teacher needs to upload the keywords of the questions along with the students answers and by just one click ,they will obtain the detected key words and  predicts the marks that should be given to the student.
+The application also maintains the marklist for the teachers, so they can analyze it later.
+
+
+Content of Project Directory 
+----------------------------
+
+The project directory contains:
+    \first 
+         \_pycache_
+         _init_.py
+         settings.py  #The settings.py is the main file where we will be adding all our applications and middleware applications
+         urls.py      #It contains the project level URL information
+         wsgi.py
+     \media
+     \newapp
+         \_pycache_
+         \migrations
+         \templates   #It contains the html files of our project
+              finalhistory.html
+              history.html
+              home.html
+              index.html
+              marklist.html
+              results.html
+         _init_.py
+         admin.py
+         apps.py
+         forms.py  #It contains the forms of our project 
+         models.py #It contains the data models of our project
+         tests.py
+         urls.py   #It contains the app level URL information
+         views.py  #It contains the different views of our project.
+      \static    #where templates css, javascript and images are placed
+      db.sqlite 
+      key.json   #API key 
+      LICENSE
+      manage.py  #The file contains the code for starting the server, migrating and controlling the project through command-line.
+
+     
+Ways to host our project:
+-------------------------
+
+Make sure you have the following installed:
+
+Python 3.9
+Django 3.x
+google-cloud-vision 
+
+In command prompt , run the following commands:
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+You will be able to view the website in http://localhost:8000/
+
+
+
