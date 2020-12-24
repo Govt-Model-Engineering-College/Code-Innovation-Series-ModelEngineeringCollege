@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="old_user.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <title>Vital Essence</title>
+</head>
+<body>
+  <ul>
+    <div class="menu">
+      <li class="anime" id="Welcome"></i><a href="#home" id="name1" ></a></li>
+      <li class="dropdown">
+        <!-- Settings or Hamburger -->
+        <a href="javascript:void(0)" class="dropbtn anime"><i class="fas fa-bars"></i> </a>
+        <div class="dropdown-content">
+          <a data-modal-target="#modal" href="#">Hospital Login</a>
+          <div class="modal active" id="modal">
+            <div class="modal-header">
+              <div class="title"><b>Admin Login History</b></div>
+              <button data-close-button class="close">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>Date:12-03-2017<br>Time: 5:48pm<br>Hospital Name : Aster Medicity, Wayanad<br><br>Date:6-11-2016<br>Time: 2:09am<br>Hospital Name : Rajagiri Hospital, Kalamassery<br><br>Date:19-06-2012<br>Time: 1:32pm<br>Hospital Name : Annai Hospital, Chennai<br><br>Date:13-02-2010<br>Time: 11:57pm<br>Hospital Name : Vellore Medical College,Vellore<br> </p>
+            </div>
+          </div>
+          <div class="active" id="overlay"></div>
+          <a href="emergency_details.html">Emergency File</a>
+          <a href="under_construction.html">Transfer File</a>
+          <a href="index.html">Log Out</a>
+        </div>
+      </li>
+    </div>
+      <li><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category"></li>
+  </ul>
+  
+  
+    <h2>MEDICAL SUMMARY</h2>
+
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        
+        <h3>Dec 21, 2020  2:30pm</h3>
+        <p>Hospital Name: Amritha Hospital
+        <br>
+        Doctor: Dr.Gangadharan S
+        <br>
+        Speciality: Oncology
+        <br>
+        Diagnosis/Test:
+        <p height="100px"></p>
+        <button class="btn-grad blood-test"><i class="fas fa-tint"></i> Biopsy Report</button>
+        <button class="btn-grad scan"><i class="fas fa-file-medical-alt"></i> MRI Scan Report</button>
+        <br>
+          Prescription:
+          <p height="100px"></p>
+          <button class="btn-grad med"><i class="fas fa-pills"></i> Medicines</button>
+          <br>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Dec 1, 2020 11:15am</h3>
+        <p>Hospital Name: Amritha Hospital
+        <br>
+        Doctor: Dr.Gangadharan S
+        <br>
+        Speciality: Oncology
+        <br>
+        Diagnosis/Test:
+        <p height="100px"></p>
+          <button class="btn-grad blood-test"><i class="fas fa-tint"></i> Blood Test Report</button>
+        <br>
+          Prescription:
+          <p height="100px"></p>
+          <button class="btn-grad med"><i class="fas fa-pills"></i> Medicines</button>
+          <br>
+        </p>
+      </div>
+     <div class="card">
+        <h3>Nov 23, 2020 1:30pm</h3>
+        <p>Hospital Name: Renai Medicare Hospital 
+        <br>
+        Doctor: Dr.Reena Philip
+        <br>
+        Speciality: General Physician 
+        <br>
+        Diagnosis/Test:
+        <p height="100px"></p>
+          <button class="btn-grad blood-test"><i class="fas fa-tint"></i> Blood Test Report</button>
+         <button class="btn-grad scan"><i class="fas fa-file-medical-alt"></i>Urine Test Report</button>
+        <br>
+          Prescription:
+          <p height="100px"></p>
+          <button class="btn-grad med"><i class="fas fa-pills"></i> Medicines</button>
+          <br>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Sept 14, 2020  10:35am</h3>
+        <p>Hospital Name: Renai Medicare Hospital
+        <br>
+        Doctor: Dr.Reena Philip
+        <br>
+        Speciality: General Physician 
+        <br>
+        Diagnosis/Test:
+        <p height="100px"></p>
+        <button class="btn-grad blood-test"><i class="fas fa-tint"></i> Blood Test Report</button>
+        <button class="btn-grad scan"><i class="fas fa-file-medical-alt"></i> Chest X-ray Report</button>
+        <br>
+          Prescription:
+          <p height="100px"></p>
+          <button class="btn-grad med"><i class="fas fa-pills"></i> Medicines</button>
+          <br>
+        </p>
+      </div>
+    </div>
+  
+  <script>
+    
+    const openModalButton = document.querySelectorAll('[data-modal-target]');
+    const closeModalButton = document.querySelectorAll('[data-close-button]');
+    const overlay = document.getElementById('overlay');
+    
+    openModalButton.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = document.querySelector(button.dataset.modalTarget)
+        openModal(modal)
+      })
+    })
+    
+    closeModalButton.forEach(button => {
+      button.addEventListener('click', () => {
+        const modal = button.closest('.modal')
+        closeModal(modal)
+      })
+    })
+
+    overlay.addEventListener('click', () => {
+      const modals = document.querySelectorAll('.modal.active')
+      modals.forEach(modal => {
+        closeModal(modal)
+      })
+    })
+
+    function openModal(modal) {
+      if (modal==null) return
+      modal.classList.add('active')
+      overlay.classList.add('active')
+    }
+
+    function closeModal(modal) {
+      if (modal==null) return
+      modal.classList.remove('active')
+      overlay.classList.remove('active')
+    }
+      var myname = localStorage.getItem("key")
+    document.getElementById("name1").innerHTML = '<i class="far fa-user"></i>'+" Welcome "+myname;
+    // document.getElementById("name1").appendChild();
+    </script>
+
+</body>
+</html>

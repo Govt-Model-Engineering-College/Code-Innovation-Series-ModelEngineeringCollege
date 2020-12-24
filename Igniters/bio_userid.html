@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bio_userid.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <title>Vital Essence</title>
+</head>
+<body>
+    <div class="imgcontainer">
+        <div class="slider"></div>
+      </div>
+    <div class="container">
+        <div class="main-head">
+          <h1 id="name1"></h1>
+        </div>
+        <form id="login-form">
+          <button id="login_btn" class="btn-grad" type="submit" value="Login"><a href="emergency.html">Biometric Scan</a></button>
+          <br>
+          <div class="or">OR</div>
+          <label for="uname"><b>User ID</b></label>
+        <br>
+        <input id="name1" type="text" placeholder="Enter UserID" value="" required>
+        <br>
+          <button id="signup-btn" class="btn-grad" type="signup" ><a href="record.html">Submit</a></button>
+          <br>
+          <div class="or">OR</div>
+        
+          <button id="signup-btn" class="btn-grad" type="signup" ><a href="index.html">Log Out</a></button>
+        </form>
+        <br>
+      </div>
+      <script>
+      var myname = localStorage.getItem("key")
+    document.getElementById("name1").innerHTML = '<i class="fas fa-hospital-user"></i>'+" Welcome "+myname;
+
+    </script>
+</body>
+</html>

@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <title>Vital Essence</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
 
+    <div class="imgcontainer">
+      <div class="slider"></div>
+    </div>
+
+    <div class="container">
+      <div class="main-head">
+        <h1><b>Vital Essence</b></h1>
+      </div>
+      <form id="login-form">
+        <label for="uname"><b>Username</b></label>
+        <br>
+        <input id="name1" type="text" placeholder="Enter Username" class="name1">
+        <br>
+        <label for="psw"><b>Password</b></label>    
+        <br>
+        <input id="pass1" type="password" placeholder="Enter Password" value="" required>      
+        <br>
+        <button onclick="mylocal()" class="btn-grad" type="submit" value="Login"><a href="old_user.html">Log in as User</a></button>
+        <button onclick="mylocal()" class="btn-grad" type="submit" value="Login"><a href="bio_userid.html">Log in as Hospital</a></button>
+        <br>
+
+        <div class="or">Or start a new journey with us</div>
+        <button id="signup-btn" class="btn-grad" type="signup" ><a href="signup.html">Sign Up</a></button>
+      </form>
+    </div>
+   
+   <script>
+   function mylocal(){
+             var getValue = $('#name1').val();
+            console.log(getValue)
+            localStorage.setItem("key",getValue)
+        }
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+﻿VITAL ESSENCE
+Electronic Medical Record
+─
+Team Igniters
+Anitha S Menon 
+Jabira Farhath M A
+Karthika R
+Shimi Shaji Abraham
+
+
+Problem 
+Create solution to deal with the major challenge faced by the patients:
+1. Enabling a patient-centered information exchange system.
+2. In Case of hospital transfers,the medical history of the patient is not used. rather all tests and diagnosis are done from the start.This leads to a lot of wastage of medical resources,time and money.
+3. There is huge delay in treatment in case of accidents as no medical information about the patient is available
+4. All medical reports and prescriptions in paper are difficult to store and manage.Retrieval of a particular report from these files is a tedious task.  
+Project Summary
+Website stores medical records of users, which helps in case of hospital transfers as the user can easily transfer their medical history to the new hospital. 
+Special access to the emergency details folder of the users for hospitals to treat accident cases in order to get their important medical details using a right index biometric.
+(Keeping all privacy issues under consideration)
+Solution
+In Case of hospital transfers, medical reports like scan reports,blood reports,prescriptions etc..can easily be transferred to the new hospital, avoiding the extra expenses and can continue the treatment right from stop.
+Users can add details like test reports and prescriptions to their account through the hospital administration.
+The delay in treatment, caused due to lack of details of the patient in case of accidents can be avoided. Using right index biometric hospitals can access emergency health and contact details of an accident case. 
+Medical reports can be accessed by the user anywhere anytime, since they are available online.
+Contents of Projects Directory
+hospital-icons
+        This file contains all images used for the website logo.
+
+
+README.md
+This contains a short description of the website ,its purpose etc.. and a link to access the website.
+ 
+bio_userid.css
+Stylesheet of bio_userid.html.
+
+
+bio_userid.html
+This file contains the hospital login page where biometric scan and user id login is provided. Login opinion from Index.html page leads you here as of now. 
+
+
+emergency.css
+Stylesheet of emergency.html.
+
+
+emergency.html
+Biometric scan from bio_userid.html leads you here. Here the emergency medical and contact details of the patient is provided.
+
+
+emergency_details.css
+Stylesheet of emrgency_details.html
+
+
+emergency_details.html
+The user can add emergency details to his profile using this page.Emergency file option from the new_user.html leads the user here. 
+index.css
+Stylesheet of index.html
+
+
+index.html
+This is the index page where the user is directed initially. This page contains the common login for user and hospital and a signup is provided for new users for opening an account .
+new_user.css
+Stylesheet of new_user.html
+
+
+new_user.html
+This file contains the homepage for the newly created user where the user is provided with options to edit emergency details and transfer files.Submit option from the signup.html leads the user here. 
+old_user.css
+Stylesheet of old_user.html
+
+
+old_user.html
+This file contains a homepage for a user,where the user can access all his medical details including prescriptions ,scan reports etc.User is directed to this page via user login.It also contains options to transfer files,and an option to edit emergency details.Admin login history can also be viewed using Hospital login option.
+
+
+record.css
+Stylesheet of record.html
+
+
+record.html
+This file contains the page for adding new files to a user’s medical profile. Hospital can add files using user id login provided in bio_userid.html.
+
+
+signup.css
+Stylesheet of signup.html
+
+
+signup.html
+This file contains the signup page where users can start a new account by submitting the details.This page is directed from the Signup option in the index.html.
+
+
+
+
+Under_construction.css
+Stylesheet of under_construction.html
+
+
+under_construction.html
+All pages which are under construction are directed to this page.Hospital login option from new user’s homepage and the notification user will get when the hospital tries to add new files page is directed to under_construction.html.
+
+
+Host Project on Localhost
+To host the project locally, 
+* Fork the project repo.
+* To clone the Igniters directory ,
+ In CMD,run the command  git clone ‘link provided in the code option’
+Or
+ Download zip from the code option and extract all files to a directory .
+* Go to the directory where you have your files extracted .
+* Now, to install http server , 
+In CMD, run the command npm install http-server -g
+* To start server, run the command  http-server
+Now the project is hosted locally on port 8080.
+Go to browser and type localhost:8080 and you can see our website there.

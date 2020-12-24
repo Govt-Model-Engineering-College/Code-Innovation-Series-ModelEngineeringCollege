@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="record.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="gif">
+      <video src="https://static.dribbble.com/users/5920881/screenshots/14088635/media/da11146df7c3cb056c8d8aa60333b935.gif?vid=1" autoplay muted loop width="530px"></video>
+    </div>
+    <div class="form-container">
+      <h1>Add new details to medical summary</h1>
+      <hr>
+      <div class="box">
+        <label for="date"><b>Date</b></label>
+        <input type="text" placeholder="Enter Date" name="date" required>
+        
+        <label for="time"><b>Time</b></label>
+        <input type="text" placeholder="Enter Time" name="time" required>
+        
+        <label for="hospital"><b>Hospital Name</b></label>
+        <input type="text" placeholder="Enter Hospital Name" name="hospital" required>
+        
+        <label for="speciality"><b>Speciality</b></label>
+        <input type="text" placeholder="Enter Speciality" name="speciality" required>
+      </div>
+      
+      <br>
+      <b class="head-browse">Diagnosis/Test Reports :</b>
+      <br>
+      <br>
+      <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">   
+        <label for="myFile"><b><i class="fa fa-upload" aria-hidden="true"></i>  Choose a file...</b></label>  
+      </form>
+      <br>
+      <b class="head-browse">Prescription :</b>
+      <br>
+      <br>
+      <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <label for="myFile"><b><i class="fa fa-upload" aria-hidden="true"></i>  Choose a file...</b></label>
+      </form>
+      
+      <br>
+      <button onclick="window.location.href='bio_userid.html'" type="submit" class="btn-grad">Submit</button>
+    </div>
+  </div>
+    
+  </div>
+  
+</body>
+</html>
