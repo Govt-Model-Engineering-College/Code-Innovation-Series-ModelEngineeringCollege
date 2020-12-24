@@ -1,0 +1,111 @@
+﻿Blockchain for Patient Centered Information Exchange
+24.12.2020
+─
+Team : RANDOM
+Members : Merlin Sarah Mathew, Aparna Sreenivas, Hemanth Sagar JC, Preeti Mariam Mathews
+
+
+
+
+Introduction
+Electronic health record (EHR) systems are widely used worldwide . Timely Health Information Exchange (HIE) across healthcare systems exhibits tremendous benefits in reducing health care costs, improving quality of care, and reinforcing disease surveillance.However, various forms of HIE pose challenges related to data quality, data security, patient privacy, and patient engagement.
+There are various conceptual models for different HIE forms:
+1. Centralized model using a central repository to store and manage all patient's health  information
+2. Federated model consists of a state-wide central HIE patient registry or record locator service (RLS) containing a combination of patients’ identifiers to match the patients across multiple regional authorities which maintain the ownership and control over the regional healthcare facilities’ records.
+3. Hybrid model combines the centralized and federated models using a centralized data repository as the national central authority or RLS to locate patient's records from different healthcare facilities.
+
+Statement of Problem
+The existing models have achieved a certain degree of success of three existing forms of HIE. However, to provide patients a robust and interoperable patient-centric HIE system, the existing HIE models have shown multiple challenges such as :
+1. Security and privacy concerns caused by central repository storage of data or patients identifiers
+2. Data ownership still controlled by authorities
+3. Mismatching of patients using RLS 
+4. Data breach caused by external cyberattacks and the threat of internal fraud
+The following scenario illustrates the barriers of the current HIE process to provide patient-centric services: 
+A patient lived in Delhi between 2000 and 2015 and moved to Kerala where he is a resident currently. He has a medical history of congestive heart failure since 2010 (well managed on medications), and a prior history of alcohol dependency (in continuous remission since 2005). While visiting Chennai, he is admitted to an emergency department for shortness of breath. It is critical for the clinicians at the healthcare facility in Chennai to access his prior records from providers in Delhi and Kerala. The patient selected to share only cardiology data but did not want other providers to know his history of substance abuse for reasons of privacy, concerns about provider bias, and recent assurances from his current primary-care physician that his remote history of alcohol dependency has no current relevance for the management of his congestive heart failure.
+
+
+Solution and Objectives
+We propose Blockchain for a patient centered information exchange system.
+Blockchain Solutions for Patient-Centric HIE challenges:
+1. Public/private keys can be used to represent a patient's identity..
+2. Immutable feature can ensure data consistency 
+3. Smart Contract can be utilized to store touchpoints for clinicians to quickly select
+4. “Unhackable” peer-to-peer network ensures transaction needs patient’s authorization
+
+Methods of Solution
+To utilize the unique technological capabilities of blockchain for patient-centric HIE, we have implemented a private Ethereum blockchain system with multiple smart-contract functions. A private blockchain is also called a “permissioned blockchain” which limits access to certain users. 
+The system architecture contains two modules:
+1. Linkage module: a system administrator from each healthcare facility will create a touchpoint for each patient's visit after the EHR is ready and input the related primary information into a smart contract for future indexing
+2.  Request module: patients grant clinicians permission to access their data by adding clinicians to the “allowed list” in the smart contract. Clinicians can select records through the touchpoints after being granted access to the patient's records without identifying the hospitals storing those records.
+3. The subsequent exchange of data among the involved remote healthcare facilities will include data encryption and use of the blockchain system to send and retrieve decryption keys
+
+Conclusion
+* Blockchain is a potent and viable technology for patient-centered access to and exchange of health information. By integrating a structured, interoperable design with patient-accumulated and generated data shared through smart contracts into a universally accessible blockchain.
+* Challenges addressed include data security, interoperability, block storage, and patient-administered data access, with several configurations emerging for further consideration regarding speed and security.
+
+
+
+SOURCE CODE
+
+
+#CREATION OF A BLOCK(Abstract Code)
+
+
+import hashlib
+import uuid
+
+
+
+
+class Block(object):
+    def __init__(self, data=None, previous_hash=None):
+        self.identifier = uuid.uuid4().hex
+        self.nonce = None
+        self.data = data
+        self.previous_hash = previous_hash
+
+
+    def hash(self, nonce=None):
+        nonce = nonce or self.nonce
+
+
+        message = hashlib.sha256()
+        message.update(self.identifier.encode('utf-8'))
+        message.update(str(nonce).encode('utf-8'))
+        message.update(str(self.data).encode('utf-8'))
+        message.update(str(self.previous_hash).encode('utf-8'))
+
+
+        return message.hexdigest()
+
+
+    @staticmethod
+    def hash_is_valid(the_hash):
+        return the_hash.startswith('0000')
+
+
+    @property
+    def mined(self):
+        return self.nonce is not None
+
+
+    def mine(self):
+        the_nonce = self.nonce or 0
+
+
+        while True:
+            the_hash = self.hash(nonce=the_nonce)
+            if self.hash_is_valid(the_hash):
+                self.nonce = the_nonce
+                return
+            else:
+                the_nonce += 1
+
+
+    def update_data(self, data):
+        self.data = data
+        self.nonce = None
+
+
+    def __repr__(self):
+        return 'Block<Hash: {}, Nonce: {}>'.format(self.hash(), self.nonce)
