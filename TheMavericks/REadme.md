@@ -1,9 +1,9 @@
 # Diabetes Tracking App
 
 This is a simple application for diabetes tracking made using flask. The app has a few features that helps in the same. 
-.This application helps you in figuring out which foods are best for keeping your blood sugar in a healthy range. The application has features that lets you scan or search for foods and see its calorie quality. The app makes it easy for you to track and discover more information about the foods you put in your body, including added sugar content, hidden ingredients, and more.
-.There is an option to communicate with the doctor. All of the data and charts can be to send to your doctor, so you can work together to adjust your treatment and better manage your diabetes based on real, accurate information.
-.The home page of the application features the latest news and updates in the health inudstry.
+This application helps you in figuring out which foods are best for keeping your blood sugar in a healthy range. The application has features that lets you scan or search for foods and see its calorie quality. The app makes it easy for you to track and discover more information about the foods you put in your body, including added sugar content, hidden ingredients, and more.
+There is an option to communicate with the doctor. All of the data and charts can be to send to your doctor, so you can work together to adjust your treatment and better manage your diabetes based on real, accurate information.
+The home page of the application features the latest news and updates in the health inudstry.
 
 # Contents of project directory
 
