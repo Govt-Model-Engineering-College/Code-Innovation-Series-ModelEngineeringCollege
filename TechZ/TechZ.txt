@@ -1,0 +1,18 @@
+Description
+“Healthify” is an app which provides a medium for effective communication between doctors and covid patients in home quarantine
+Doctors can also keep track of the state of covid patients in home quarantine and submit the data for research 
+Tracking the new strains of the virus becomes more easier and faster, helping to contain the new strains more effectively.
+Using Healthify, Doctors can keep an eye on patient’s vitals like:
+Temperature
+Pulse
+Blood pressure
+Saturation of oxygen (SpO2) 
+Sugar levels
+and provide them necessary assistance whenever necessary.
+
+Contents.
+Healthify_by_TechZ.zip (contains HTML files)
+TechZ.txt
+TechZ.ppt
+
+Currently, we have done only the front end using HTML and CSS.
