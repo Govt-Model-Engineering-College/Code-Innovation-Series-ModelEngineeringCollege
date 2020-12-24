@@ -1,0 +1,21 @@
+﻿CODE INNOVATION SERIES
+Hackathon 2020
+
+
+Description of the project
+We have created an aadhar based dynamic national repository of medical records of citizens for an effective healthcare management.
+Main Features:
+* Each user will have a unique Health ID and QR code which when scanned by a registered doctor will let him/her access and manipulate the patient’s medical records.
+* Paperless patient health management reduces dependency on hard copies. Thus making it easier for doctors and patients. All the same, this implements green impact.
+* A two-step verification process will be done through OTP before a doctor can access a patient’s records, thus adding a double layer of security.
+* Documents like X-rays, ECGs, MRI scans, etc and prescriptions can be uploaded in the patient’s records with ease. 
+* Users can link their accounts with their family members so that they can view their records and vice-versa. 
+Project Directory
+File name: Health Techies
+File Contents: 
+* HTML
+* CSS
+* JavaScript
+* Images
+Way to host the project on the local host
+We have hosted our project on the local host through live stream on Visual Studio Code
