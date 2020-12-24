@@ -1,0 +1,38 @@
+.logo
+{
+    height:200px;
+    width:200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head1{margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+     display: block;
+     font-size: 25px;
+     
+     
+     
+     
+ }
+
+ .head{
+text-align: center;
+font-size: 32px;
+
+
+ }
+ .para{
+    font-size: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+ 
+   }
+.head2{
+    font-size: 25px;
+    padding-left: 250px;
+    padding-right: 250px;
+ 
+}
+

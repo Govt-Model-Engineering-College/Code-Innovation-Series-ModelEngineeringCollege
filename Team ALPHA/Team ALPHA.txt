@@ -1,0 +1,11 @@
+In this pandemic situation people are afraid to go out of their houses, especially to hospitals. So when they get small diseases they just eat some allopathic medicines without prescription. This is harmful for their body as they cause side effects. So we have designed a website to help people make use of the traditional method of treatment, 'Home remedies'.
+A home remedy (sometimes also referred to as a granny cure) is a treatment to cure a disease or ailment that employs certain spices, herbs, vegetables, or other common items
+Herbal medicines are generally considered to be safe and effective agents. Therefore, people more and more turn to herbal medicine because they believe that plant remedies are free from undesirable side effects.
+Nowadays, more and more people are turning away from conventional medicines, because they believe that ‘natural’ substances like medicinal plants are safer than synthetic substances. 
+
+We plan to add certain features in the future like :
+Chatbot for personalized experience. It should also be able to recognize plants and herbs from pictures so that the new generation users who do not have much knowledge in this area can be helped.
+Adding yoga asanas which can be used for prevention and reduction of diseases
+
+
+
