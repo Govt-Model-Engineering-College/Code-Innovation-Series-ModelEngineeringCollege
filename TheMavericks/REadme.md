@@ -25,6 +25,11 @@ command to install flask: pip install flask
 
 # Screenshots of prototype
 ![](images/im1.jpeg)
+![](images/im2.jpeg)
+![](images/im3.jpeg)
+![](images/im4.jpeg)
+![](images/im5.jpeg)
+
 # Group
 ## The Mavericks
 - Thomas George(CS5B)
