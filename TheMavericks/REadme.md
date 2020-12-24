@@ -7,7 +7,7 @@ This is a simple application for diabetes tracking made using flask. The app has
 
 # Contents of project directory
 
-- TheMavericks(The flask application)
+- TheMavericks, zip file(The flask application)
 - Screenshots of the design prototypes
 - ppt presentation about the project
 
