@@ -24,7 +24,7 @@ command to install flask: pip install flask
 - The project will be running in your localhost at port 5000.
 
 # Screenshots of prototype
-![](images/im1.png)
+![](TheMvericks/images/im1.jpeg)
 # Group
 ## The Mavericks
 - Thomas George(CS5B)
