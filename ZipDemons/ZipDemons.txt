@@ -1,0 +1,5 @@
+﻿The project is a website that displays the real-time stock data in a graphical format so that the users can easily read the data.
+The website shows the stock data of multiple companies, the stock rise, and fall in a week. 
+However, the website only displays the stock trends of various companies and does not provide any provisions for investment or any other transactions.
+The project directory consists of HTML, CSS, and JavaScript files that create the website and its functionality.
+Using SimpleHTTPServer or a web server like Apache can host the project
