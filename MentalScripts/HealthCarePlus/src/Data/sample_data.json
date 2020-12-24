@@ -1,0 +1,56 @@
+ {
+  "additionalUserInfo": {
+    "isNewUser": true,
+    "providerId": "phone"
+  },
+  "credential": null,
+  "operationType": "signIn",
+  "user": {
+    "apiKey": "AIzaSyB7ZByx7Ohro-M2lCWke8VV1mV4g6u2tYI",
+    "appName": "[DEFAULT]",
+    "authDomain": "healthcareplus-35.firebaseapp.com",
+    "createdAt": "1608640099164",
+    "displayName": null,
+    "email": null,
+    "emailVerified": false,
+    "isAnonymous": false,
+    "lastLoginAt": "1608640099164",
+    "phoneNumber": "+919544262863",
+    "photoURL": null,
+    "providerData": [
+      {
+        "displayName": null,
+        "email": null,
+        "phoneNumber": "+919544262863",
+        "photoURL": null,
+        "providerId": "phone",
+        "uid": "+919544262863"
+      }
+    ],
+    "redirectEventId": null,
+    "stsTokenManager":  {
+    "isAnonymous": false,
+    "lastLoginAt": "1608640099164",
+    "phoneNumber": "+919544262863",
+    "photoURL": null,
+    "providerData":  [
+       {
+        "displayName": null,
+        "email": null,
+        "phoneNumber": "+919544262863",
+        "photoURL": null,
+        "providerId": "phone",
+        "uid": "+919544262863"
+      }
+    ],
+    "redirectEventId": null,
+    "stsTokenManager":  {
+      "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNjYmM4ZjIyMDJmNjZkMWIxZTEwMTY1OTFhZTIxNTZiZTM5NWM2ZDciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaGVhbHRoY2FyZXBsdXMtMzUiLCJhdWQiOiJoZWFsdGhjYXJlcGx1cy0zNSIsImF1dGhfdGltZSI6MTYwODY0MDA5OSwidXNlcl9pZCI6ImVVbU5uQzRhWk9Yc0VSNWcwY2RTMFZSaDRkMzMiLCJzdWIiOiJlVW1ObkM0YVpPWHNFUjVnMGNkUzBWUmg0ZDMzIiwiaWF0IjoxNjA4NjQwMDk5LCJleHAiOjE2MDg2NDM2OTksInBob25lX251bWJlciI6Iis5MTk1NDQyNjI4NjMiLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7InBob25lIjpbIis5MTk1NDQyNjI4NjMiXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwaG9uZSJ9fQ.GxEtoSyv4Ze5yo4esaybNVvIsHxfCyrWA7bVrBJgXz6C5wrTZsqR0gkK_eWhoA_OO4ykfsMz8lN0phZBOpLC8q4oxddCo2sZmEW93LR9pju16-kpxZC_gXuxCqFltBX9mTo-1ePD4NSeF1OUQlHV2EAmSjc59cKFuIy34Z_CQ1WZGqHuE8GE2AvvJ-nKLbj7FavxLMjOLPuMTgoMx0JtclyFEkyovF2TN8lm5UboaixOJGzFrzk3wUb_tHrJuKed0EA8hZvWdRfeQF8tRJFhHuYA7eytsPkS5lH1ljiYSjGfGUTHk5BZFGRvLwYoNg_BJbkYSHKT0gPDVqb894oh9A",
+      "apiKey": "AIzaSyB7ZByx7Ohro-M2lCWke8VV1mV4g6u2tYI",
+      "expirationTime": 1608643698841,
+      "refreshToken": "AG8BCnex_ktJrp3qR1KmLR2LBM05oKNgcA8DUK25RJJbmRQReadUgqLWaN7LdqRFcdQRiFIwp8zFZxNHVJsG4vu8YhbV9_0A7r0ccx_6a6_9znKCc-_3JqAL9M1hxWRczb39B8BB7f27K0Ytu0cReDupko4TGse6viFuEdbStJes0K2DSpoftC-YUiXPnCq6muW8RpsKAzEU23jSnSqznJ6w6QY-NRnEqw"
+    },
+    "tenantId": null,
+    "uid": "eUmNnC4aZOXsER5g0cdS0VRh4d33"
+  }
+}}

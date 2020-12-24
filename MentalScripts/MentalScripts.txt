@@ -1,0 +1,27 @@
+Description
+===========
+The Health Care + is a user centric medical data management and health care app which also supports blood donation.
+It is a general purpose health app for medical consultation, blood donation and request, obtaining medical updates,
+emergency assistance and organizing medical reports and related files as soft copy. 
+The projects aims at bringing all necessary health assistance under the same umbrella.
+
+Link to our powerpoint presentation - https://docs.google.com/presentation/d/1OuwsUyHsF7-PgtGnfs6sn2rvLlW1QYT3BK5Agt3xD5c/edit?usp=sharing
+
+Link to our prototype presentation video - https://drive.google.com/file/d/1U42iXl3TQOVRX7vJP22qnERTyhvfywVI/view?usp=sharing 
+
+Contents of project directory (HealthCarePlus)
+==============================================
+.expo and .expo-shared - Files for expo
+assets - Static assets including images, fonts etc
+src - Source folder containing code
+app.json - Config file for app
+babel.config.js - Config file for JavaScript
+index.js - Entry file of app
+package.json and package-lock.json - npm package.json file containing info about dependencies etc
+
+Hosting our app on localhost
+============================
+In the Source folder (HealthCarePlus)
+1) npm install
+2) Start any android/ios emulator 
+3) expo start - start the development server - default PORT 19000 ( Accessed from emulator) and Expo DevTools is running at http://localhost:19002
