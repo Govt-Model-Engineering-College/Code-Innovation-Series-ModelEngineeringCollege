@@ -1,6 +1,10 @@
+Description :
 Our product aims at making revolutionary changes in the field of e-learning using the current platforms. The app offers
 hands on learning using simple AI integration. Students especially of upper primary and mid school get a learning 
 experience which is in the form of interactive games,quizzes and various competitions. This system checks at how students 
 can cover their school curriculum effectively balancing things around their daily life.
 
-The files included are the project directory of the android project files(flutter)
+Included Files :
+The project directory of the android project files(flutter)
+
+Requires hosting of no files
