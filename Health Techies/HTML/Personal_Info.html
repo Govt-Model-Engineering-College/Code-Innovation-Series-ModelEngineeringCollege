@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="text/javascript" src="../JS/transfer.js"></script>
+    <link rel="shortcut icon" type="image/jpg" href="../images/icon.jpg">
+</head>
+<body id="personal_info_page">
+
+    <div class="nav">
+        <ul>
+           <li><img class = 'sth'src="../images/stethoscope.svg" ><span class='title'>HealthCare Partner</span></li> 
+           <li><a href="Log_In.html"><span class="log"> Back</span></a></li>
+        </ul>
+         
+    
+      </div>
+    <h4 id="create">Personal Information</h4>
+    <div class="p_form">
+        <form class="Personalinfo" action="common.html" method="GET">
+
+         <label for="BloodGrp">Blood Group&emsp;</label>
+         <select name="BloodGrp">
+             <option value="0 "selected disabled>Select&emsp;</option>
+             <option value="A+ ">A+</option>
+             <option value="O+">O+</option>
+             <option value="B+ ">B+</option>
+             <option value="AB+ ">AB+</option>
+             <option value="A- ">A-</option>
+             <option value="O- ">O-</option>
+             <option value="B- ">B-</option>
+             <option value="AB- ">AB-</option>
+        </select>
+        <br><br><br>
+            
+
+            <label for="height">Height</label>
+            <input type="number" id="height" name="height" placeholder="in cm">
+            <br><br>
+             <label for="weight">Weight</label>
+            <input type="number" id="weight" name="weight" placeholder="in kg">
+            <br><br>
+
+
+            <label for="allergies">Allergies (Mention if any)</label>
+            <input type="text" id="allergies" name="allergies" >
+            <br><br>
+
+
+            <label>Have you had a heart attack in the past?</label><br><br>
+            <label for="yes"> Yes </label>
+            <input type="radio" name="heart-choice" id = 'yes'value="choice-1">
+
+            <label for="no"> No </label>
+            <input type="radio" name="heart-choice" value="choice-2">
+
+            <br> <br>
+
+            <label>Do you consume tobacco in any form?</label><br>
+            <label for="yes"> Yes </label>
+            <input type="radio" name="tobacco-choice" value="choice-1">
+
+            <label for="no"> No </label>
+            <input type="radio" name="tobacco-choice" value="choice-2">
+
+            <br> <br>
+
+            <label for="alcoholcount">How many times in a week do you consume alcohol? &emsp;</label>
+            <input type="number" id="alcoholcount" name="alcoholcount" > 
+            <br><br>
+
+            <label for="checkupcount">How many times did you go for health checkup in the last one year? </label>
+            <input type="number" id="checkupcount" name="checkupcount" > 
+            <br><br>
+
+            <label for="Dailydiet">How careful are you about your daily diet?</label><br><br>
+         <select name="Dailydiet">
+             <option value="0 "selected disabled>Select</option>
+             <option value="5 ">Almost always</option>
+             <option value="4">Sometimes</option>
+             <option value="3 ">Every once in a while</option>
+             <option value="2 ">Rarely</option>
+             <option value="1 ">Never</option>
+        
+        </select>
+        <br><br><br>
+
+            <button>Submit</button>
+
+
+        </form>
+    </div>
+    <br><br>
+</body>
+</html>
