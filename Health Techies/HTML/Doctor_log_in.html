@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Log In</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" type="image/jpg" href="../images/icon.jpg">
+</head>
+<body id="log_in_page">
+     
+    <div class="nav">
+        <ul>
+           <li><img class = 'sth'src="../images/stethoscope.svg" ><span class='title'>HealthCare Partner</span></li> 
+          <li><a href="Home_page.html"><span class="log"> Back</span></a></li>
+        </ul>
+         
+    
+      </div>
+
+    <h1 id="doc_log">Doctor Log In</h1>
+    <div class="form">
+        <form id="doc-login-form" action="Doctor_page.html" method="GET">
+            <br>
+            <label>Doctor Registration Number</label><br>
+            <input required> 
+            <br><br>
+            <label>Email ID</label><br>
+            <input type="email" required placeholder="ex: john@xyz.com"> 
+            <br><br>
+            <label>Password</label><br>
+            <input type="password" required placeholder="password"> 
+            <br><br>
+            <label>Phone Number</label><br>
+            <input type="tel" pattern="[0-9]{10}"> 
+            <br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
