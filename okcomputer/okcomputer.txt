@@ -1,0 +1,22 @@
+Description : A fraud detection application, using Machine Learning to detect and display fraudulent transactions that have been inputted. 
+We propose a data driven model using machine learning algorithms on big data to predict the probability of a transaction being fraudulent or legitimate
+
+
+Contents: Contains the django to host our application on the local machine
+
+Ways To Host: 
+
+requirements :
+python
+django
+scikitlearn
+xgboost
+numpy 
+pandas
+
+-->create a virtual environment with conda
+-->install requirements into the virtual environment
+-->change directory to okcomputer/okcomputer
+-->python manage.py migrate
+-->python manage.py makemigrations
+-->python manage.py runserver
