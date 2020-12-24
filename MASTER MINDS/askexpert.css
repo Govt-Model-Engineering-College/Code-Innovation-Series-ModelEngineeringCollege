@@ -1,0 +1,46 @@
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://image.freepik.com/free-vector/orange-question-mark-background-with-text-space_1017-27394.jpg");
+    background-color:#fff;
+    font-family: sans-serif;
+}
+.contact-box{
+    width:510px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    margin-left: 50%;
+    height: 450px;
+}
+form{
+    margin: 35px;
+}
+.input-field{
+    width:400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.textarea-field{
+    height:150px;
+    padding top: 10px;
+}
+.btn{
+    border-radius: 20px;
+    color:#fff;
+    margin-top: 18px;
+    padding:10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}

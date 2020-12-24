@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<link rel="stylesheet" href="admincss.css">
+<title>Admin section-Add Topics</title>
+</head>
+<body>
+<div class="admin-wrapper">
+<div class="left-sidebar">
+<ul>
+<li><a href="admin.html">Manage Posts</a>
+<li><a href="users.html">Manage User</a>
+<li><a href="topics.html">Manage Topics</a>
+</ul>
+</div>
+<div class="admin-content">
+<div class="button-group">
+<a href="topics create.html" class="btn">Add Topic</a>
+<a href="topics.html" class="btn">Topics</a>
+</div>
+<div class=content>
+<h2 class="page-title">Add Topic</h2>
+<form action="create.html" method="post">
+<div>
+<label>Name</label>
+<input type="text" name="name" class="text-input">
+</div>
+<div>
+<label>Description</label>
+<textarea name="description" id="body"></textarea>
+</div>
+<div>
+<button type="submit" class="btn" >Add Topic</button>
+</div>
+</form>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/24.0.0/classic/ckeditor.js"></script>
+<script src="js main.js"></script>
+</body>
+</html>
