@@ -1,0 +1,27 @@
+Code Innovation Series 2020
+Team Andromeda 
+
+Project Description
+
+We have created a web-based booking system -"OCTIS" which allows users to book a token for covid testing at the nearest hospital. Presently, testing
+for covid-19 requires people to either go physically to the hospital to book for the next day or use someones help. Basically there is no
+centralised booking system for covid-19 testing. Such a system will help in avoiding crowds in the hospital as well as act as a convenient solution for
+people.
+
+Octis utilises a virtual queue system. Users will be able to login to the website and choose a convenient date for testing and their nearest hospital.
+Hospital staff can use the administrative login to view patient list.
+
+Project Directory Contents
+*Octis.css
+*Octis.html
+*octisreg.css
+*octisreg.html 
+*covid.jpg
+*octis.jpg
+*covid1 (1).jpg
+*covid2 (2).jpg
+*covid3 (1).jpg
+
+Method to Host Project on Local Host
+1. Download the zipped project folder.
+2. Extract it and open the "Octis.html" file using web browser
