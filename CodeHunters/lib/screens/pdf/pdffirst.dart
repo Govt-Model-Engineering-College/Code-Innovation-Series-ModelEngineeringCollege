@@ -122,9 +122,24 @@ class _FirstPageState extends State<FirstPage> {
   }
 
   @override
+
   void initState() {
+    mainReference.once().then((DataSnapshot snap) {
+      var data = snap.value;
+      print(data);
+      //Map<dynamic, dynamic> values = snap.value;
+      //print(values);
+      data.forEach((key, value) {
+        Modal m = new Modal(key['PDF'], value['Filename']);
+        print(m);
+        itemList.add(m);
 
 
-
+      });
+      setState(() {
+        print(itemList.length);
+      });
+    });
   }
+
 }
