@@ -1,0 +1,38 @@
+Tutoria
+Building A Better World One Student At A Time
+In the present scenario most of the high school students aren’t able to join for tuition classes either due to COVID-19 issues or even maybe due to high tuition fees. At the Same time there are many Senior students who are interested in teaching other students.
+Our project connects these two groups and helps benefit both the groups 
+It allows users to join course/classes provided by other students/users in a very flexible and affordable manner .
+
+These courses would be one-on-one mode, providing an individual attention to each concept thus having a full use of the money you spent in the course .
+
+The user would have to pay the fee when taking part in a course but it would only be sent to the tutor only if the student claims he/she is satisfied with the class thus providing transparency 
+
+If the user feel unsatisfied by the class the tutor would have to review the contents of the class with student to ensure understanding.
+
+We also plan to host a community chat where users can converse with other individuals regarding doubts/materials/tips, helping our community to grow bigger
+
+
+The Project directory contains:
+CSS              
+assetscoursepage  
+checkout.html           
+courses-log.html  
+form-validation.js  
+index.html
+Coursepage.html  
+assetshomepage    
+course-search-log.html  
+courses.html      
+homepage.html       
+login.html
+assets           
+assetsmainacc     
+course-search.html      
+cover.css         
+images              
+mainacc.html
+
+Open index.html in any browser to experience a demo
+
+Presentation link: https://drive.google.com/file/d/1dkZ7uiEWO0BNH-0kuOucTFFuwL4R8Id6/view   (please open in MS powerpoint)

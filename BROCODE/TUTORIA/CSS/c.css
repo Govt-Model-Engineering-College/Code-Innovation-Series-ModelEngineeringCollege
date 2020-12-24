@@ -1,0 +1,20 @@
+.min
+{
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #654ea3, #eaafc8);
+}
+.txt
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 30%;
+    transform: translate(-50%,-50%);
+}
+.tt{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+}
