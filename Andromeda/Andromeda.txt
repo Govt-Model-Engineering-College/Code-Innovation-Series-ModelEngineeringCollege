@@ -18,6 +18,7 @@ Project Directory Contents
 *octisreg.html 
 *covid.jpg
 *octis.jpg
+*octis.jpeg
 *covid1 (1).jpg
 *covid2 (2).jpg
 *covid3 (1).jpg
