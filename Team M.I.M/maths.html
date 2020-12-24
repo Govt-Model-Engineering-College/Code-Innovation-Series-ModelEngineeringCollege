@@ -1,0 +1,416 @@
+<html>
+<head>
+<title>
+	Dream Big
+</title>
+<?php 
+ session_start();
+ if(!isset($_SESSION['userid'])){
+     header('location:login.html');
+ }
+ ?>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+*
+{
+margin:0;
+padding:0;
+}
+	.topnav {
+	  position:absolute;
+	  z-index:4;
+	  left:7px;
+	  right:9px;
+	  overflow: hidden;
+	  background-color:#06141F ;
+	}
+
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 77px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	#bg{
+		background-image:url(homeimg2.jpg);
+		background-size: 100%;
+		background-repeat:no-repeat;
+		position:relative;
+
+		width:100%;
+		height:80%;		
+		overflow: hidden;
+	
+	}
+	
+	#heading{
+		position:relative;
+		left:2%;
+		top:95%;
+		font-family:comic sans ms;
+		font-size:80px;
+		font-weight:bold;
+		color:#fff ;
+		size:4px;			  
+		}
+			
+	.start{
+		position: relative;
+		top:35px;
+		left:47%;
+		border-radius: 7px;
+		border: 1px ;
+		padding:6px;
+		width:160px;
+		height:41px;
+		font-family: comic sans ms;
+		font-size:20px;
+		background-color:#063D55;
+		color:#D8F0ED;
+		text-align: center;
+		text-decoration: none;
+		}
+			
+	.start:hover {
+		background-color:#507E93;
+		}
+			
+		
+	
+	#t1{
+		border: 0;
+		padding:10px;
+		position: absolute;
+		top: 40%;
+		left: 49%;
+		transform: translate(-50%, -50%);		
+		}
+		
+	#t2{
+		border: 0;
+		padding:8px;
+		position: absolute;
+		top: 90%;
+		left: 5%;	
+		size:30px;
+		}
+		
+	#character{
+		color:#063D55;
+		font-family:comic sans ms;
+		font-size:40px;
+		
+	}
+	
+	.split1 {
+	  height: 33%;
+	  width: 60%;
+	  position: absolute;
+	  z-index: 1;
+	  overflow-x: hidden;
+	  padding-top: 10px;
+	}
+	
+	.split2 {
+	
+	  height: 40%;
+	  width: 50%;
+	  position: absolute;
+	  z-index: 1;
+	  overflow-x: hidden;
+	  padding-top: 20px;
+	}
+
+	.left {
+	  left: 0;
+	  
+	}
+	
+	.center{
+		left:25%;
+		
+	}
+	
+
+	.right {
+	  right: 0;
+	  
+	}
+
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+	
+	#tick{
+	height:20px;
+	width:19px;
+	}
+	
+	#justify{
+	font-size:18;
+	text-align:justify;
+	}
+	
+	#why_choose_us{
+	height:180px;
+	width:280px;
+	}
+	
+	#about{
+	padding-top: 20px;
+	position:absolute;
+	text-align:justify;	
+	text-align-last:left;
+	font-size:18;	
+	left:12%;
+	}
+	
+	.para{
+	max-width: 86%;
+	}
+	
+	.pos{
+	position:relative;
+	top:30%;
+	}
+	
+	#words{
+	text-align:center;
+	color:#063D55;
+	font-size:22;
+	}
+	
+	#blackbg{
+	position:relative;
+	top:50%;
+	background-image:url(black.jpg);
+	color:white;
+	background-size:100%;
+	background-repeat:no-repeat;
+	width: 100%;
+	height:80%;		
+	overflow: hidden;
+	}
+	
+	#contactus{
+	font-family: comic sans ms;
+	font-size:30px;
+	text-align:center;
+	}
+	
+	.split3 {
+	
+	  height: 40%;
+	  width: 70%;
+	  position: absolute;
+	  z-index: 1;
+	  overflow-x: hidden;
+	  padding-top: 20px;
+	}
+	
+	.pos0{
+	position:absolute;
+	top:10%;
+	}
+
+	.pos1{
+	position:relative;
+	top:15%;
+	}
+	
+	.pos2{
+	position:absolute;
+	top:35%;
+	}
+	
+	.pos3{
+	position:absolute;
+	top:57%;	
+	}
+			
+	#picsize{
+	height:60px;
+	width:55px;
+	}
+	
+	
+	
+.heading{
+  font-size: 144pt;
+  font-family: 'Luckiest Guy';
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #212121,  
+                 0px -6px 0 #212121,
+                 0px  6px 0 #212121,
+                 0px  6px 0 #212121,
+                -6px  0px 0 #212121,  
+                 6px  0px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px -6px 0 #212121,  
+                 6px -6px 0 #212121,
+                -6px  6px 0 #212121,
+                 6px  6px 0 #212121,
+                -6px  18px 0 #212121,
+                 0px  18px 0 #212121,
+                 6px  18px 0 #212121,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
+}
+
+
+
+
+	
+</style>
+
+<body>
+	<!---navigation bar--->
+	<section id = "nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <a class="navbar-brand" href="main.html"><img src=logo.png height="50px"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	  </button>
+	 
+	</nav>
+	</section>
+
+	<div id="bg">
+
+	
+	<table id="t1" width="100%">
+	<tr><td align=center><p id="heading" class="heading"><br>MATHS</p></td></tr>
+	
+	</table>
+	</div>
+	
+	
+	
+	<div id="character" align="center">
+	<br><br><br>Available courses
+	</div>
+	
+	<div class="split1 left">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>
+	Associate's Degrees: </b>
+	The 2-year colleges offer this. In order to enroll in this course, a candidate must have a high school diploma or GED. It has a combination of general education with math courses. After completion, the students will receive an Associate of Arts or Associate of Science degree.
+	</div>
+	</div>
+	
+	<div class="split1 right">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>Bachelor's Degrees: </b>
+	Students opting for it receive a Bachelor of Arts or a Bachelor of Science degree in mathematics. They need to have a high school diploma or GED to get enrolled in this course. This course makes them capable to teach math in grades K-12.
+	</div>
+	</div>
+	
+	<div class="split1 left pos">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>
+	Master's Degrees: </b>
+	This program is suitable for those candidates who want to teach the subject in a 2-year or 4-year college/university. Even high school maths teachers can opt for it to enhance their credentials and expertise in the subject. They need a bachelor's degree for admission to this course.
+	</div>
+	</div>
+	
+	<div class="split1 right">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b> Ph.D. in Mathematics: </b>
+	This course trains students to become researchers and scholars. Candidates need a Master's degree to apply for this program. They can become experts in specific areas such as engineering or computational science, after completion of this course. The course takes 4-6 years for completion and has final written and oral exams too. 
+	</div>
+	</div>
+	
+	<div id="character" align="center">
+	<br><br><br><br><br>Career options<br>
+	</div>
+	
+	<div class="split1 left">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>
+	Data Scientist: </b>
+	Data Science is among the fastest-growing sectors in India. From academic research to studying consumer behaviour, data science finds application in many areas due to which it’s among the best career options for maths students. Data Science is the most popular course available for students & one of the best courses for maths students. 
+	</div>
+	</div>
+	
+	<div class="split1 right">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>Machine Learning Expert: </b>
+	If you want to enter the tech industry and work on the latest technologies, then perhaps you should pursue a career in machine learning. Machine learning is the study of computer algorithms which improve themselves through multiple iterations. Currently, machine learning and artificial intelligence are solving many problems, and find uses in retail, social media, logistics, healthcare, security, and many other industries.
+	</div>
+	</div>
+	
+	<div class="split1 left pos">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>
+	Business Analyst: </b>
+	Among the most lucrative career options for maths, students are business analytics. Business analytics is the field of studying past business practices of an organisation to advance it further and create better plans. Business analysis is one of the best career options for maths students as a business analyst has to work with a lot of data and use it to gain the necessary insights to find solutions to existing problems facing one’s organisation.
+	</div>
+	</div>
+	
+	<div class="split1 right">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b> Blockchain Developer: </b>
+	Blockchain is a relatively new sector that has generated a lot of buzz because of its numerous capabilities. From cryptocurrencies to logistics, blockchain is finding uses in multiple industries and is a technology of the future. 
+	</div>
+	</div>
+	
+	<div class="split1 left pos">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>
+	Banker: </b>
+	Another prominent career choice among students of mathematics is banking. A career in banking offers lucrative pay, security, and unique challenges. Banking professionals have to deal with a lot of numbers, and having a background in mathematics will surely help you in this sector. Banking is one of the preferred career options for maths students.
+	</div>
+	</div>
+	
+	<div class="split1 right">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b> Statistician: </b>
+	Statistics is the study of collection, organisation, and analysis of data through graphs and charts. It is among the most popular career options for maths students. Statisticians collect data and use it to get valuable insights. 
+	</div>
+	</div>
+	
+	
+	<div class="split1 left pos">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b>
+	Economist: </b>
+	If the discussion of India’s economy sparks an interest in you, then you can pursue a career in economics. Economists study the distribution of resources in society. They research and analyse the economic trends of the country and the world. They also explore the relationship between these trends and make forecasts for future trends. Dr Manmohan Singh, Raghuram Rajan, and Amartya Sen are some of the most esteemed economists of our country. 
+	</div>
+	</div>
+	
+	<div class="split1 right">
+	<div class="centered" id="justify">
+	<img id="tick" src="tick.png"><b> Psychometrician: </b>
+	Have you heard of personality types? For example, when someone says they are an introvert, how do they find that out? In most cases, they find this out by giving a personality test, which analyses their traits through a set of questionnaires. Psychometrician is one of the popular career options for maths students.
+	</div>
+	</div>
+	
+		
+</body>
+</html>
