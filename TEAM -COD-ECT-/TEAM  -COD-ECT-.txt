@@ -1,0 +1,53 @@
+PERSONAL VISUAL ASSISTANCE DEVICE
+                     BY Team -COD-ECT-
+
+IDEA
+To help the visually impaired live a better life by creating a device that helps them navigate accurately in this
+world using sensors , realtime obstacle mapping global positioning system and internet of things.
+
+INTRODUCTION
+The idea is to help the visually impaired person navigate efficiently and independently through the streets by using 
+two sensors on each footwear and two obstacle detection camera on front and back. The sensors measure the length of 
+each stride accurately which upon combining with GPS facility and AI will enable the person to know thier location 
+and direction in real time through voice commands using the earphones. The camera warns the person of the obstacle 
+by image recognition using AI . Thus device, when connected with the IOT or home appliances will enable that person
+ to also handle the appliances and home using voice commands..overall, making the life of a blind person much more efficient
+
+REQUIREMENTS
+ 1) 2 proximity sensors : To measure the length of each stride .
+ 2) infrared obstacle detection camera : To detect the presence of obstacles on the way .
+ 3)gps connection : To track the location of a person accurately .
+ 4)ear phones & smartphone : To process the data and give instructions .
+
+PROCEDURE
+Each of the footwears of the visually impaired person will be fitted with a proximity sensor each that are programmed so as to measure the 
+distance between them accurately .This will help measure the length of each stride of the visually impaired person irrespective of their speed.
+Two infrared obstacle detection cameras located at the front and back of the blind person will detect the presence of any obstacle 
+present in the path of that person . The mobile application will collect both the datas from the proximity sensors and the 
+infrared sensors. The gps module will track the exact location of the person . The mobile application will use this data 
+from the gps module in combination with google maps and the sensors to create a virtual world . The image recognition algorithms
+will be able to identify the obstacles present around the blind person and warn them . Since the length of each stride is accurate 
+the map can guide the blind person with precision . Thus the blind person can reach the prefered destination . The maps will provide the
+instructions via audio through the headset . Connecting this device to the home appliances through IOT technology will enable 
+the person to handle these appliances much more efficiently , such as lights , gas stove etc.. and can control these appliances 
+through voice commands . 
+
+FUTURE SCOPE
+An average eye transplantation in india costs around 2000$ or Rs 1,30,000 . Since most of the people cannot afford a transplant 
+this device will provide an alternative solution . According to global statistics the availability of eyes to total number of
+ patients is of the ratio of 1:70 . This lack of resource can be leveled using device .
+
+TOTAL PRODUCTION COST
+This device can be produced ath an average cost of Rs 15,000 .
+
+CONCLUSION
+This device will create ripples across the blind population and give them new hope .
+
+
+THANK YOU .
+
+
+
+
+
+ 
