@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>Correction app</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/css/owl.css'%}">
+  <link rel="stylesheet" href="{% static 'assets/css/lightbox.css'%}">
+
+  <style>
+        .body {
+          margin-top: 100px;
+          padding: 1200px;
+        }
+        input[type=submit] {
+          background-color: #f5a425 !important;
+          font-size: 20px !important;
+          }
+          .label-form {
+            color: white !important;
+          }
+  </style>
+
+</head>
+<body style = "background-color: #172238;">
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Correct</em>Easy</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{%url 'newapp:home' %}">Home</a></li>
+        <li><a href="{%url 'newapp:finalhistory' %}">History</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <section class="section contact"  >
+    <div class="container" >
+    <div style = "  margin-top :10%; color: white;">
+    <h1 style = "  color :white ;">Welcome to Handwriting Recognizer</h1>
+    <h2></h2>
+    <form action='/results/' method='post' class="form" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <label  class="form-label" for="customFile" ><b>Please input the answer key for the question below  </b>  </label>
+
+        <input type='file' name='key' accept='img/*' id='pic' style="    opacity: 100%;"  class="custom-file-input form-control">
+        <br>
+        <label  class="form-label" for="customFile" ><b> Please add the picture of the image</b></label>
+        <input type='file' name='pic' accept='img/*' id='pic' style="    opacity: 100%;" class="custom-file-input form-control">
+        <br>
+        <br><label  class="form-label" for="customFile" ><b>Question Number :<b></label>
+          <br>
+          <input type="number" id="qno" name="qno"><br>
+           <br>
+        <label  class="form-label" for="customFile" ><b>Roll Number of Student :<b></label>
+          <br>
+          <input type="number" id="roll" name="roll"><br>
+           <br>
+           <br>
+           <label  class="form-label" for="customFile" ><b>Class of the Student<b></label>
+            <br>
+            <input type="text" id="class" name="class"><br>
+             <br>
+             <br>
+             <label  class="form-label" for="customFile" ><b>Name of the Student<b></label>
+              <br>
+              <input type="text" id="name" name="name"><br>
+               <br>
+               <br>
+        <label  class="form-label" for="customFile" ><b>The Marks of the Question<b></label>
+        <br>
+        <input type="number" id="marks" name="marks"><br>
+         <br>
+         <br>
+        <input type='submit' class="button" bgcolor="orange">
+    </form>
+  <!--  <button type="button" onclick="location.href='/finalhistory'" class="button">History</button> -->
+  </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Results</title>
+
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css'%}">
+
+    <style>
+        button {
+            color: white;
+            display: inline-block;
+            background: orange; /*-webkit-linear-gradient(top, #f9f9f9, #e3e3e3);*/
+            border: 1px solid #999;
+            border-radius: 3px;
+            padding: 5px 8px;
+            outline: none;
+            white-space: nowrap;
+           -webkit-user-select: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 10pt;  
+        }
+        .container-one { 
+          position: relative; 
+        }
+        
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);}
+
+        .button:active {
+            background-color: #3e8e41;
+             box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .custom-file-input {
+            color: transparent;
+        }
+        .custom-file-input::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+        .custom-file-input::before {
+            content: 'Select some files';
+            color: black;
+            display: inline-block;
+            background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+            border: 1px solid #999;
+            border-radius: 3px;
+            padding: 5px 8px;
+            outline: none;
+            white-space: nowrap;
+           -webkit-user-select: none;
+            cursor: pointer;
+            text-shadow: 1px 1px #fff;
+            font-weight: 700;
+            font-size: 10pt;
+        }
+        .custom-file-input:hover::before {
+            border-color: black;
+        }
+        .custom-file-input:active {
+             outline: 0;
+        }
+        .custom-file-input:active::before {
+             background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+        }
+        .boxed {
+            border: 3px solid orange ;
+          }     
+          input[type=submit] {
+            background-color: #f5a425 !important;
+            font-size: 20px !important;
+            }
+            body {font-family: Arial, Helvetica, sans-serif;}
+
+          #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+
+          #myImg:hover {opacity: 0.7;}
+
+          .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            padding-top: 100px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9); 
+          }
+
+          .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 1500px;
+          }
+
+          #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+          }
+
+          .modal-content, #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+          }
+
+          @-webkit-keyframes zoom {
+            from {-webkit-transform:scale(0)}
+            to {-webkit-transform:scale(1)}
+          }
+
+          @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+          }
+
+          .close {
+            position: absolute;
+            top: 150px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+          }
+
+          .close:hover,
+          .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+          @media only screen and (max-width: 700px){
+            .modal-content {
+              width: 100%;
+            }
+          }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+
+            height: 300px; /* Should be removed. Only for demonstration */
+            border-right: 1px solid black; 
+        }
+        table {
+          width:75%;
+        }
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          color: Black;
+
+        }
+        #t01 tr:nth-child(even) {
+          background-color: rgb(255,255,255,0.5);
+        }
+        #t01 tr:nth-child(odd) {
+         background-color: rgba(165, 154, 154, 0.431);;
+        }
+        th, td {
+          padding: 15px;
+          text-align: left;
+        }
+     
+        #t01 th {
+          background-color: black;
+          color: white;
+        }
+    </style>
+</head>
+<body style = "background-color: #172238;">
+
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+          <a href="{%url 'newapp:home' %}"><em>Correct</em>Easy</a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+          <ul class="main-menu">
+            <li><a href="{%url 'newapp:home' %}">Home</a></li>
+            <li><a href="{%url 'newapp:finalhistory' %}">History</a></li>
+
+          </ul>
+        </nav>
+    </header>
+
+    <section class="section contact" >
+      <div class="container" style =" background-color:rgb(0,0,0,0.4)" >
+        <div style = "  margin-top :8.5%;">
+          <br>
+          <br>
+        <h1 style = "  color :white ; text-decoration: underline;" align="center">Mark Prediction</h1>
+        <br>
+         <div class="row" style="height:auto;border-bottom:3px solid orange;padding-bottom: 5%;" align="center">
+            <div class="column" style="display:table">
+                <table id="t01" align='right'>
+                    <th><h1 style = "  color :orange ;" align="center">Keywords</h1></th>
+                {% for key in keys %}
+                    <tr>
+                        <td  >{{key}}</td>
+                    </tr>
+                {% endfor %}
+                </table>
+            </div>
+           
+            <div class="column"style="display:table" >
+                <table id="t01"  align='left'>
+                   <th><h1 style = "  color :orange ;" align="center">Detected words</h1></th> 
+                    {% for d in detect %}
+                    <tr>
+                        <td >{{ d }}</td>
+                    </tr>
+                    {% endfor %}
+                    </table>
+                    
+              </div>
+              <br>
+              <br>
+              <br>
+  
+              
+        </div>
+        
+    <div >
+           <br>
+           <br>
+            <h1 style = "  color :white ;" align="center"> Answer sheet </h1>
+            <br>
+            <br>
+            <figure align="center">
+            <img id="myImg" src = "{{ file }}"  style="width:50%;height:auto;" alt ="Answer Sheet">
+            <figcaption style="color:white;">Click the pic to view full sheet</figcaption>
+            </figure>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+            </div>
+          <p style="line-height: 2.0;"></p>  
+          <br><br> 
+        </div>
+          
+          <div class="boxed" style="background-color: black; width: 1000px; border: 15px solid orange; padding: 50px; margin: auto;">
+          <h2 style = "  color :white ; text-align: center;"> Out of {{tc}} key words , {{kc}} are detected .</h2>
+          <h2 style = "  color :white ; text-align: center;"> Our predicted mark is {{ mark }} out of {{ total }}. </h2>
+          </div>
+          <form action='/history/' method='POST' class="form" enctype="multipart/form-data" style ="background-color:rgb(0,0,0,0); width:50%;margin-left: 27%;" align="center">
+            <br><br> 
+              {% csrf_token %}
+              <label  class="form-label" for="customFile" style="display: block;" ><h3 style="font-size: 25px; text-align: center; color:white;" ><b >Enter the Final Marks for the Answer :<b></h3></label>
+                  
+                  <input type="number" id="totmarks" name="totmarks" align="center" style="width:75%;" size="4"><br>
+                  
+                  <br>
+                  <div class="container-one">
+                    <div class="center">
+                    <input type='submit' class="button" bgcolor="orange" style="width:250px; float:left;">
+                   </div>
+                  </div>
+                  
+          </form>
+        </div>
+      </div>
+      </section>
+    <script>
+      var modal = document.getElementById("myModal");
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+</body>
+</html>
