@@ -1,0 +1,108 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../../../assets/background_img1.png');
+    background-size: 100%;
+    color: #fff;
+    height: 100vh;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    background-color: transparent;
+    padding-top: 1.5rem;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .navbar ul li a:hover {
+    color: goldenrod !important;
+  }
+  
+  #home {
+      display: flex;
+      align-content: flex-end;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    background-size: 100%;
+  
+    /* Scroll Snap */
+    scroll-snap-align: center;
+  }
+  
+  .flex-container {
+      display: flex;
+  }
+  
+  .card {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+  }
+  
+  #home a {
+      background-color: goldenrod;
+      border: none;
+      box-shadow: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      width: 20rem;
+  }
+  
+  #home h1 {
+    font-size: 5rem;
+  }
+  
+  #home p{
+    font-size: 1.5rem;
+  } 
+  
+  #home button:hover {
+      color: black;
+  }
+  
+  #signup .card a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  #login .card a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }

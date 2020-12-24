@@ -1,0 +1,19 @@
+<h1 style="text-align: center;">Create course</h1>
+<form #courseForm="ngForm" class="container" (ngSubmit)="onSubmit()" >
+    <div class="container">
+        <p *ngIf="bool">
+            <mat-spinner></mat-spinner>
+        </p>
+
+        <p>
+            <mat-form-field class="col-8">
+                <input matInput [(ngModel)]="course.name" placeholder="Name" type="text" name="name" required>
+            </mat-form-field>
+            <br>
+        </p>
+    </div>
+    <div class="container row" style="text-align: right;">
+        <button mat-button class="success" mat-dialog-close>Cancel</button>
+        <button mat-button type="submit" class="success" [disabled]="courseForm.invalid">Create</button>
+    </div>
+</form>

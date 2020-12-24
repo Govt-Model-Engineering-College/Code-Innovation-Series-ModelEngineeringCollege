@@ -1,0 +1,14 @@
+<div class="form col-12">
+  <div class="col-1"></div>
+    <form class="col-10" [formGroup]="userForm">
+      <p *ngIf="bool">
+        <mat-spinner></mat-spinner>
+    </p>
+      <img src="../../../../assets/student_icon.png" width="60px" height="60px" style="text-align:center; border-radius: 30px;">
+        <input class="row" type="text" formControlName="name">
+        <input class="row" type="password" formControlName="password">
+        <input class="row" type="email" formControlName="email">
+        <button (click)="onSubmit()">save</button>
+    </form>
+    <div class="col-1"></div>
+</div>

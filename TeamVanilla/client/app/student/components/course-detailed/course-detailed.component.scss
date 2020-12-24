@@ -1,0 +1,21 @@
+.spacer {
+  flex: 1 1 auto;
+}
+$primary: #9b5def;
+$secondary: #8d99ae;
+mat-toolbar {
+  text-align: center;
+
+}
+mat-tab-group {
+  height: -webkit-fill-available;
+  background-color: $primary;
+  color: white;
+}
+
+mat-tab {
+  background-color: $secondary;
+}
+.my-content {
+  color: black;
+}

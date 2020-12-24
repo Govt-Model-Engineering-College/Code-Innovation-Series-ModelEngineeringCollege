@@ -1,0 +1,52 @@
+<main class="main">
+    <div class="container col-sm-12">
+        <form novalidate [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <h1 class="text-center">Signup as a Student</h1>
+            <div class="container">
+                <p *ngIf="bool">
+                    <mat-spinner></mat-spinner>
+                </p>
+
+                <p class="form-group">
+                        <input class="form-control form-control-sm" novalidate formControlName="name" placeholder="Name" type="text" required />
+                        <mat-error *ngIf=" name.invalid && (name.dirty || name.touched)">
+                            <span *ngIf="name.errors.required">Name is required!</span>
+                        </mat-error>
+                    <br>
+                </p>
+                <p class="form-group">
+
+                        <input class="form-control form-control-sm" novalidate formControlName="email" placeholder="Email" type="email" required />
+                        <mat-error *ngIf=" email.invalid && (email.dirty || email.touched)">
+                            <span *ngIf="email.errors.required">Email is required!</span>
+                            <span *ngIf="email.errors.email">Invalid email</span>
+                        </mat-error>
+
+                    <br>
+                </p>
+                <p class="form-group">
+
+                        <input class="form-control form-control-sm" novalidate formControlName="password" placeholder="Password" type="password" required />
+                        <mat-error *ngIf=" password.invalid && (password.dirty || password.touched)">
+                            <span *ngIf="password.errors.required">Password is required!</span>
+                            <span *ngIf="password.errors.minlength">Password should not be less than 6 characters</span>
+                        </mat-error>
+
+                    <br>
+                </p>
+                <p class="form-group">
+
+                        <input class="form-control form-control-sm" novalidate  formControlName="confirmpassword" placeholder="Confirm Password" type="password" required />
+                        <mat-error *ngIf=" confirmpassword.invalid && (confirmpassword.dirty || confirmpassword.touched)">
+                            <span *ngIf="confirmpassword.errors.required">Required!</span>
+                         <!--  <span *ngIf="signupForm.errors?.wrong && (signupForm.dirty || signupForm.touched)">Passwords dont match</span> -->
+                        </mat-error>
+
+                    <br>
+                </p>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="signupForm.invalid">Sign up</button>
+            <small id="message" class="form-text" (click)="goLogin()" >Already have an account?</small>
+        </form>
+    </div>
+</main>

@@ -1,0 +1,20 @@
+.card {
+  margin: 10px;
+  padding: 0;
+  border: 0;
+  .card-body {
+    background-color: #f1f1f1;
+  }
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
+main {
+  overflow-x: hidden;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+

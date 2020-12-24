@@ -1,0 +1,25 @@
+<!-- <app-course></app-course> -->
+<div class="main">
+  <mat-toolbar color="primary">
+    <button mat-button (click)="goHome()">Home</button>
+    <button mat-button (click)="openDialog()">Create Course</button>
+    <button mat-button (click)="goVerify()">Verify</button>
+    <span class="spacer"></span>
+    <span>EDUZONE</span>
+    <img mat-card-avatar src="assets/logo.jpg" width="20px" height="20px" style="padding-left: 5px;">
+  </mat-toolbar>
+<h1 style="text-align: center; margin-top: 5px;">Courses</h1>
+  <main class="container">
+    <section class="row">
+      <div class="col-lg-3 col-xs-12 col-sm-6" *ngFor="let course of courses">
+        <div class="card col-12" (click)="go(course._id)">
+          <img src="assets/img2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
