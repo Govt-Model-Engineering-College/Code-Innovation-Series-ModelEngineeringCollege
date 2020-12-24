@@ -1,0 +1,9 @@
+brief description
+it is an app to remind their users of their monthly
+menstrual period and also for people intaking
+pills ,so that they can be reminded of their exact
+time to take medicine.
+
+contents of project directory
+flutter application(not complete)
+can be run by vscode or android studio
