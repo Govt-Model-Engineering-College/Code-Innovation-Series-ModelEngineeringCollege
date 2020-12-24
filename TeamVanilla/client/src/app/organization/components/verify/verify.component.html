@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <button mat-button (click)="goHome()">Home</button>
+  <button mat-button (click)="openDialog()">Create Course</button>
+  <button mat-button (click)="goVerify()">Verify</button>
+  <span class="spacer"></span>
+  <span>EDUZONE</span>
+  <img mat-card-avatar src="assets/logo.jpg" width="20px" height="20px" style="padding-left: 5px;">
+</mat-toolbar>
+<main class="container">
+  <mat-card *ngFor="let req of requests; let i=index" style="background-color: #f1f1f1; color:black;">
+      <div class="row card-div">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloribus! Deleniti, totam consequatur. Asperiores voluptatum blanditiis temporibus voluptate, quas saepe repudiandae omnis unde, perspiciatis, dicta corporis incidunt inventore quia sunt!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ratione quod, quibusdam magnam at molestias delectus reprehenderit dolor vitae quae accusamus laborum, deleniti quos repellendus omnis est voluptatibus neque pariatur!
+
+          </div>
+          <button mat-button (click)="accept(i)">Accept</button>
+          <span class="spacer"></span>
+          <button mat-button (click)="reject(i)">Reject</button>
+      </div>
+  </mat-card>
+</main>

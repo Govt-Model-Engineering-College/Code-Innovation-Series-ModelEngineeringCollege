@@ -1,0 +1,54 @@
+Team Vanilla
+Incubate Hackathon
+
+Contributors: 
+Anna Simon
+Deon Joshy
+Nihitha S
+Nikhil George Mathew
+
+
+ppt link: https://docs.google.com/presentation/d/12FsYlWfdOI0z9k33vD0TvZThIKhnDfbmay-QSUBVhdc/edit?usp=sharing
+
+PROBLEM:
+1. Current E-learning site used by colleges/schools misses out on some key features.
+2. These sites are not designed from a student point of view and hence could be
+made more student friendly.
+3. Teachers may also find it difficult to upload materials and do stuff because
+functionality of these sites aint clear.
+
+OBJECTIVES
+1. Create an E-learning platform
+2. Easy to use and pleasant to the eye
+3. Organizations should be able to adopt and use hassle-free
+
+OVERVIEW
+The website will have 3 views. One for Organization, one for students and the other for
+teachers.
+Organizations can create classes, courses and assign teachers.
+Students can enroll in courses (non-specific to any organisation) or submit a request to
+enroll in organization, which the organisation may choose to accept or refuse. If
+accepted, organization adds student to any of the desired classes and the student gets
+access to all the courses.
+Teacher works similar to Student, but has the power to control the course page. The
+course page would have a separate view - forum - where both teachers and student can
+post. The main course page could be divided into sections so that teacher can organise
+the posts.
+
+Current Status: HALF COMPLETE
+
+On the server side, a secure authentication is yet to be done.
+Uses 6 document models: Organization, Course, Student, Teacher, Class, Post
+Put, Post, Get of all these have been implemented on the server side.
+Website front-end is lagging behind. At the moment, dummy templates have been inserted to experiment with the server and all pages have been laid out with the same.
+Styling and integration is yet to be done.
+Angular-Typescript services for integration from server-side to client-side have all been smoothly set-up.
+
+
+Steps to Reproduce:
+
+clone the repo.
+there are 2 parts - client and server
+run 'npm install' on both parts to install node_modules
+run 'ng serve' on client side to start website
+run 'npm start' on server side to start server

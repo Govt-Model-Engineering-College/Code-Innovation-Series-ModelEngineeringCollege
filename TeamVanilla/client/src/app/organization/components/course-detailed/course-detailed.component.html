@@ -1,0 +1,47 @@
+<!--
+<button mat-button (click)="addTeacher(search.value)">Add Teacher</button>
+<mat-select #search novalidate [(ngModel)]="teacher" placeholder="Select Teacher" required>
+    <mat-option *ngFor="let teacher of teachers" [value]="teacher._id">{{teacher.name}}</mat-option>
+</mat-select>
+-->
+<!-- content wrapper -->
+<mat-toolbar>
+
+    <span style="text-align: center;">My Course</span>
+
+    <span class="spacer"></span>
+
+    <button mat-button aria-label="Add teacher">Add teacher</button>
+    <button mat-button aria-label="Add student">Add Student</button>
+
+</mat-toolbar>
+<mat-tab-group mat-stretch-tabs class="mat-elevation-z4">
+  <mat-tab label="Main">
+    <div class="my-content" *ngFor="let my_card of main_cards" (click)="gotoPost(my_card)">
+      <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Forum">
+    <div class="my-content" *ngFor="let my_card of forum_cards" (click)="gotoPost(my_card)">
+      <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>

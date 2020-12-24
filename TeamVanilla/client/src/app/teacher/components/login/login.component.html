@@ -1,0 +1,27 @@
+<main class="container col-sm-12">
+    <form #loginForm="ngForm" class="container" (ngSubmit)="onSubmit()" >
+
+      <h1 style="text-align: center;">Teacher Login</h1>
+
+
+            <p *ngIf="bool">
+                <mat-spinner></mat-spinner>
+            </p>
+
+            <div class="form-group">
+                    <input class="form-control form-control-sm"  [(ngModel)]="user.email" placeholder="Email" type="email" name="email" required>
+                <br>
+            </div>
+            <div class="form-group">
+                    <input class="form-control form-control-sm"  [(ngModel)]="user.password" placeholder="Password" type="password" name="password" required>
+                <br>
+            </div>
+            <div class="forgot_password">
+                <a href="#">Forgot your password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Log in</button>
+            <div>
+                <small id="message">Need an account? <a (click)="goSignin()">Register</a> </small>
+            </div>
+    </form>
+</main>

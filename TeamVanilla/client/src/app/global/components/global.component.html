@@ -1,0 +1,150 @@
+<div class="main-container">
+  <!--Navigation bar-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <a class="navbar-brand p-3" href="#" style="color: white;">
+        <img src="assets/logo.jpg" height=30 width="30" alt="" style="padding: 5px;"> <b>EDUZONE</b>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" (click)="goHome()">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" (click)="goSignup()">Sign Up </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" (click)="goLogin()">Login </a>
+          </li>
+          <!--
+          <li class="nav-item active">
+            <a class="nav-link" href="#team">Team </a>
+          </li>
+        -->
+        </ul>
+      </div>
+  </nav>
+
+  <!--Sections-->
+  <section  class="container-fluid" id="home">
+    <h1>Learn At Ease</h1>
+    <p class="p-3">A Community For Learners</p>
+    <a type="button" (click)="goSignup()" class="btn btn-primary p-2">Get Started</a>
+  </section>
+  <section id="signup" class="container-fluid">
+      <h1 class="p-3 mt-2">Sign Up</h1>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4">
+                <div class="card m-2" (click)="goToStudentSignup()">
+                  <div class="card-body">
+                      <img src="assets/student_icon.png" width="100" height="100" alt="">
+                      <div class="card-body">
+                        <a>Student</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card m-2" (click)="goToTeacherSignup()">
+                  <div class="card-body">
+                    <img src="assets/teacher_icon.png" width="100" height="100" alt="">
+                    <div class="card-body">
+                      <a>Teacher</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="card m-2" (click)="goToOrganizationSignup()">
+                    <div class="card-body">
+                      <img src="assets/org_icon.png" width="100" height="100" alt="">
+                      <div class="card-body">
+                        <a>Organization</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+  </section>
+  <section id="login" class="container-fluid mt-5">
+  <h1 class="p-3 mt-2">Login</h1>
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-4">
+            <div class="card m-2" (click)="goToStudentLogin()">
+              <div class="card-body">
+                  <img src="assets/student_icon.png" width="100" height="100" alt="">
+                  <div class="card-body">
+                    <a>Student</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card m-2" (click)="goToTeacherLogin()">
+              <div class="card-body">
+                <img src="assets/teacher_icon.png" width="100" height="100" alt="">
+                <div class="card-body">
+                  <a>Teacher</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="card m-2" (click)="goToOrganizationLogin()">
+                <div class="card-body">
+                  <img src="assets/org_icon.png" width="100" height="100" alt="">
+                  <div class="card-body">
+                    <a>Organization</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  </section>
+  <!--<section id="team">
+    <h1 class="p-5">Meet Our Team</h1>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                  <img src="assets/member1.png" alt="">
+                <h5 class="card-title">Member 1</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <div class="card-body">
+                  <img src="assets/member2.png" alt="">
+                <h5 class="card-title">Member 2</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                    <img src="assets/member3.png" alt="">
+                  <h5 class="card-title">Member 3</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                    <img src="assets/member4.png" alt="">
+                  <h5 class="card-title">Member 4</h5>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </section> -->
+</div>
