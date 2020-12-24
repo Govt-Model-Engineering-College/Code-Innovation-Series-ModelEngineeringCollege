@@ -1,0 +1,121 @@
+﻿Fatigue Detector
+-3xpl0its.Axx
+
+
+DESCRIPTION
+Our team presents Fatigue-detector, mainly developed keeping in mind the present trend of online classes.
+Due to this pandemic all of us are spending a lot of time on our Computers and phones to attend our classes. 
+Apart from this we also spend a lot of time online working on different things.In such a situation it is natural that students would get stressed and tired.
+Our project is aimed at solving this issue.Our app would help students stay awake during online classes by monitoring their eye movements. 
+It would trigger an alarm in case the student accidently dozes off during online classes. It would also remind us to have sufficient intake of water from time to time. 
+Moreover there is an additional feature which would give students daily tips on how to maintain their health and stay active during online classes.
+
+
+Contents of Project Directory
+
+
+* app.py: Python file for executing the project
+* fatigue: Folder containing alarm sounds,shape predictor and a  previously trained model as a .dat file
+* files: Folder containing the output files for the EAR,Yawn and Blink            count
+* static: Folder containing the media, .css and .js files
+* templates: Folder containing the .html files for frontend
+* utils: Utility folder containing all additional files
+
+│   .all-contributorsrc
+│   .gitattributes
+│   .gitignore
+│   app.py
+│   Procfile
+│   README.md
+│   requirements.txt
+│
+├───fatigue
+│   │   fatigue.py
+│   │   shape_predictor_68_face_landmarks.dat
+│   │   yawn.py
+│   │
+│   └───sounds
+│           alarm.wav
+│           alarm2.mp3
+│
+├───files
+│       BLINK.txt
+│       EAR.txt
+│       YAWN.txt
+│
+├───screenshots
+│       graph.PNG
+│       main.PNG
+│       report.PNG
+│       reportpage.PNG
+│       tip.PNG
+│       tip2.PNG
+│
+├───static
+│   │   main.css
+│   │   script.js
+│   │
+│   └───media
+│           about.svg
+│           background.webm
+│           home.jpg
+│           loader.svg
+│           refresh.svg
+│           sleep.svg
+│           tired.svg
+│
+├───templates
+│       about.html
+│       base.html
+│       index.html
+│       report.html
+│       video.html
+│
+└───utils
+    │   quotes.py
+    │
+    └───__pycache__
+            quotes.cpython-39.pyc
+
+
+
+
+Installation and Hosting
+
+
+Clone The Repository:
+git clone https://github.com/hhhrrrttt222111/fatigue-detector.git
+cd fatigue-detector
+
+Installation
+For Windows:
+py -m pip install --upgrade pip
+py -m pip install --user virtualenv
+py -m venv env
+.\env\Scripts\activate
+py -m pip install -r requirements.txt
+
+For MacOS & Linux:
+python3 -m pip install --user --upgrade pip
+python3 -m pip install --user virtualenv
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+
+RUN:
+python app.py
+
+Viewing:
+Open the specified port number on your browser (Usually http://127.0.0.1:5000/)
+
+
+PRESENTATION LINK:
+https://docs.google.com/presentation/d/1kS8H9BQWGZybhB9q5hF1pnXyST3sQzBAXtWI1t4PtNA/edit#slide=id.gb248ef790f_0_1795
+
+
+DEMO LINK:
+https://drive.google.com/file/d/1FCDtNe_QqYjRD7KnMLfuoCs1_TNXeqEx/view
+
+
+REPO LINK:
+https://github.com/hhhrrrttt222111/fatigue-detector
