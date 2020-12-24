@@ -65,46 +65,84 @@ Future improvements that can be implemented to the product include:
 **Project Directory**
 
 ├───android
-│   ├───app
-│   │   └───src
-│   │       ├───debug
-│   │       ├───main
-│   │       │   ├───kotlin
-│   │       │   │   └───com
-│   │       │   │       └───example
-│   │       │   │           └───brainnerds 
-│   │       │   └───res
-│   │       │       ├───drawable
-│   │       │       ├───mipmap-hdpi
-│   │       │       ├───mipmap-mdpi
-│   │       │       ├───mipmap-xhdpi
-│   │       │       ├───mipmap-xxhdpi
-│   │       │       ├───mipmap-xxxhdpi
-│   │       │       └───values
-│   │       └───profile
-│   └───gradle
-│       └───wrapper
-├───assets         \\includes images and fonts used in the application
-│   ├───fonts     \\Source Sans Pro
-│   └───images  \\Icons used in the home page, background image for splash page and sign in page
-├───ios
-│   ├───Flutter
-│   ├───Runner
-│   │   ├───Assets.xcassets
-│   │   │   ├───AppIcon.appiconset
-│   │   │   └───LaunchImage.imageset
-│   │   └───Base.lproj
-│   ├───Runner.xcodeproj
-│   │   ├───project.xcworkspace
-│   │   │   └───xcshareddata
-│   │   └───xcshareddata
-│   │       └───xcschemes
-│   └───Runner.xcworkspace
-│       └───xcshareddata
-├───lib                 \\contains all Dart classes including main.dart (entry point of the app) 
-│   └───Screens   \\contains Dart classes of the splash, sign up, sign in, home, reminder, message, menu
-└───test
 
+│   ├───app
+
+│   │   └───src
+
+│   │       ├───debug
+
+│   │       ├───main
+
+│   │       │   ├───kotlin
+
+│   │       │   │   └───com
+
+│   │       │   │       └───example
+
+│   │       │   │           └───brainnerds 
+
+│   │       │   └───res
+
+│   │       │       ├───drawable
+
+│   │       │       ├───mipmap-hdpi
+
+│   │       │       ├───mipmap-mdpi
+
+│   │       │       ├───mipmap-xhdpi
+
+│   │       │       ├───mipmap-xxhdpi
+
+│   │       │       ├───mipmap-xxxhdpi
+
+│   │       │       └───values
+
+│   │       └───profile
+
+│   └───gradle
+
+│       └───wrapper
+
+├───assets         \\includes images and fonts used in the application
+
+│   ├───fonts     \\Source Sans Pro
+
+│   └───images  \\Icons used in the home page, background image for splash page and sign in page
+
+├───ios
+
+│   ├───Flutter
+
+│   ├───Runner
+
+│   │   ├───Assets.xcassets
+
+│   │   │   ├───AppIcon.appiconset
+
+│   │   │   └───LaunchImage.imageset
+
+│   │   └───Base.lproj
+
+│   ├───Runner.xcodeproj
+
+│   │   ├───project.xcworkspace
+
+│   │   │   └───xcshareddata
+
+│   │   └───xcshareddata
+
+│   │       └───xcschemes
+
+│   └───Runner.xcworkspace
+
+│       └───xcshareddata
+
+├───lib                 \\contains all Dart classes including main.dart (entry point of the app) 
+
+│   └───Screens   \\contains Dart classes of the splash, sign up, sign in, home, reminder, message, menu
+
+└───test
 
 The root of the project has pubspec.yaml. This file contains the app's dependencies that include both external libraries/modules and assets like images and config files. 
 
