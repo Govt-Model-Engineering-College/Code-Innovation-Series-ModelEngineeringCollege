@@ -96,4 +96,5 @@ http://localhost:3030
 
 #### ADDITIONAL LINKS FOR REFERENCE
 1. Demo video: https://youtu.be/YzbGFNSXcyE
-2. Github repo: https://github.com/Vishruth-S/TeachEasy
+2. Presentation: https://docs.google.com/presentation/d/1_SmSUD3697AcMTMs-CJTiVtYmVz-v3DEKwgZboZ6-Og/edit?usp=sharing
+3. Github repo: https://github.com/Vishruth-S/TeachEasy
