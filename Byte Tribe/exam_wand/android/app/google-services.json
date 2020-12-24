@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "366254026877",
+    "project_id": "exam-wand",
+    "storage_bucket": "exam-wand.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366254026877:android:9e65dce00d02020d5a4114",
+        "android_client_info": {
+          "package_name": "com.developer.exam_wand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366254026877-dp9v2uktio95k9mlm8ip5go79tf2a0if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMMDsaSlWK3Lf8DMGgn4OO1kxwkR_QoIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366254026877-dp9v2uktio95k9mlm8ip5go79tf2a0if.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
