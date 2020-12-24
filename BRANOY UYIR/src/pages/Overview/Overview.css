@@ -1,0 +1,12 @@
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+.img{
+  position: relative;
+  top: 90px;
+}
+
+.sessions{
+  height:1900px;
+}
