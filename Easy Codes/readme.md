@@ -4,3 +4,5 @@ due to increasing covid cases it has become too riscky to go outside.
 the hospitals are highly contaminated areas
 its better to care our diseases from our home itself
 we are introducing an idea of online consultancy to cure our minor diseases.
+it make local people to consult people doctors from itself for checkups
+we have also introduced an setting of uploading test results
