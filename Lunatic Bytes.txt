@@ -1,0 +1,72 @@
+<<<<<<< HEAD
+
+
+ _Project Description_
+
+ Amigo, is a personal medical assistant which aims at improving the mental health of the user through various interactive features.
+ Moreover, it also improves the sleep pattern and helps in stress relief.Mental illness constitutes one-sixth of all health-related
+ disorders.Lack of support is the main reason for mental illness becoming more dangerous and even leading to suicides.
+
+
+
+ _Contents Of Project Directory_
+ 
+    .vscode
+    android
+    assets
+    ios
+    lib
+    test
+    .gitignore
+    .metadeta
+    pubspec.lock
+    pubspec
+    README
+
+
+
+ _Way To Host Project_
+  
+    Playstore
+
+
+
+ _Video Demo Of Working Model_
+  
+=======
+
+
+ _Project Description_
+
+ Amigo, is a personal medical assistant which aims at improving the mental health of the user through various interactive features.
+ Moreover, it also improves the sleep pattern and helps in stress relief.Mental illness constitutes one-sixth of all health-related
+ disorders.Lack of support is the main reason for mental illness becoming more dangerous and even leading to suicides.
+
+
+
+ _Contents Of Project Directory_
+ 
+    .vscode
+    android
+    assets
+    ios
+    lib
+    test
+    .gitignore
+    .metadeta
+    pubspec.lock
+    pubspec
+    README
+
+
+
+ _Way To Host Project_
+  
+    Playstore
+
+
+
+ _Video Demo Of Working Model_
+  
+>>>>>>> 06f0c2746ec81a6ed09be23fb53da1740f2cb610
+   https://drive.google.com/file/d/1BmDVe3W2_qWFL1PdMF5NiNx75w957-9Y/view?usp=drivesdk
