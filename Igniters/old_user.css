@@ -1,0 +1,300 @@
+/* Mobile-first responsive */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* 
+{
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background: linear-gradient(-45deg, #1F75FE,#6A5ACD, #3457D5, #23a6d5,#4D4DFF, #23d5ab,#191970);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient 
+{
+  0% 
+  {
+		background-position: 0% 50%;
+	}
+  50% 
+  {
+		background-position: 100% 50%;
+	}
+  100% 
+  {
+		background-position: 0% 50%;
+	}
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.menu
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #0e59e2;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10px;
+}
+#Welcome
+  {
+  font-size: 18px;
+  cursor: pointer;
+  } 
+  .dropbtn
+  {
+  font-size: 18px;
+  cursor: pointer;
+  }
+  .modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 10;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #1F75FE; 
+    min-width: 90%;
+    padding: 10px;
+    background-color: #1F75FE;
+    animation: bg 20s ease infinite;
+}
+@keyframes bg{
+  20%{
+    background-color:#6050DC; 
+  }
+  40%{
+    background-color: #004687; 
+  }
+  60%{
+    background-color:#1877F2;
+  }
+  80%{
+    background-color:#0000CD;
+  }
+  100%{
+    background-color:  #1F75FE;
+  }
+}
+
+  .modal.active{
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+  }
+  .modal-header .title{
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .modal-header .close{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .modal-body{
+    padding: 10px 15px;
+  }
+  #overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9);
+    pointer-events: none;
+  }
+  #overlay.active{
+    opacity: 1;
+    pointer-events: all;
+  }
+  @media only screen and (min-width:900px)
+{
+  .modal{
+    min-width: 30%;
+    width: 700px;
+    height: 600px;
+  }
+  .modal:hover{
+    box-shadow: 0 0 5px #6F00FF, 0 0 25px #6F00FF, 0 0 50px #6F00FF, 0 0 100px #6F00FF;
+  }
+  .modal-header .title{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .modal-body{
+    padding: 10px 15px;
+    font-size: 1.15rem;
+  }
+  #overlay{
+      background-color: rgba(0,0,0,0.95);
+  }
+}
+
+  #mySearch {
+    width: 100%;
+    font-size: 20px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  color: white;
+  border-radius: 10px;
+}
+
+li.dropdown {
+  display: inline-block;
+
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #191970;
+  margin-left: -25vw;
+  width: 135px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1; color: black;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  .card {
+    margin: 50px;
+    background-color:#e9e9e9;
+    margin: 20px 5%;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 5px 10px 18px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    font-size: 17px;
+}
+h2{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.btn-grad 
+{
+  background-image: linear-gradient(to right, #0c0e9c 0%, #09b3b0  51%, lime  100%)
+}
+.btn-grad 
+{
+
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+  padding: 35px 35px;
+  transition: 0.7s;
+  background-size: 200% auto;            
+  border-style: none;
+  border-radius: 10px;
+  cursor: grab;
+}
+
+.btn-grad:hover 
+{
+
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+}
+
+.blood-test:hover{
+  color: red;
+}
+.scan:hover{
+  color: rgb(88, 6, 136);
+}
+.med:hover{
+  color: rgb(219, 7, 113);
+}
+
+@media only screen and (min-width:900px)
+{
+  .card {
+    margin: 20px 25%;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+  }
+  .card:hover{
+    box-shadow: 5px 10px 18px rgba(0,0,0,0.5);
+  }
+  h2{
+  font-size: 2.5em;
+  }
+  .dropdown-content {
+    width: 15%;
+    margin-left: 65.3vw;
+}
+.dropbtn
+  {
+  margin-left: 76.97vw;
+  }
+  /* text animation while hover */
+  .anime{
+    background: linear-gradient(to right, white 50%, black 50%);
+  }
+  .anime{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+  }
+  .anime{
+    transition: background-position 500ms ease;
+  }
+  .anime:hover {
+    background-position: 0 100%;
+  }
+}

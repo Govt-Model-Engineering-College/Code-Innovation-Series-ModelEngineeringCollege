@@ -1,0 +1,307 @@
+/* Mobile-first responsive */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* 
+{
+  box-sizing: border-box;
+
+}
+
+body 
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background: linear-gradient(-45deg, #1F75FE,#6A5ACD, #3457D5, #23a6d5,#4D4DFF, #23d5ab,#191970);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+  padding: 16px;
+}
+
+.container h1{
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.container hr {
+  border: none;
+  background: linear-gradient(90deg,#1F75FE,skyblue);
+  height: 2px;
+}
+
+.box
+{
+  padding: 15px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  font-size: 17px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+}
+
+body 
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background: linear-gradient(-45deg, #1F75FE,#6A5ACD, #3457D5, #23a6d5,#4D4DFF, #23d5ab,#191970);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+.container .policy{
+  padding-top: 10px;
+  color: white;
+}
+
+.container .policy a{
+  color:#5e13a3;
+}
+
+@media only screen and (min-width:900px){
+  .container{
+  padding: 0 30%;
+  }
+  .container p{
+    font-size: 18px;
+  }
+  .container .policy a:hover{
+    color: blue;
+}
+}
+.btn{
+  text-decoration: none;
+}
+/* Button style */
+.btn-grad 
+{
+  background-image: linear-gradient(to right, #5e13a3 0%, #26D0CE  51%, #1A2980  100%)
+}
+.btn-grad 
+{
+  margin: 10px auto;
+  padding: 15px 55px;
+  text-transform: uppercase;
+  transition: 0.7s;
+  background-size: 200% auto;            
+  border-style: none;
+  display: block;
+  border-radius: 40px;
+}
+/* Button animation while hovering */
+.btn-grad:hover 
+{
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+/* Button text's style */
+.btn-grad a
+{
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+@keyframes gradient 
+{
+  0% 
+  {
+		background-position: 0% 50%;
+	}
+  50% 
+  {
+		background-position: 100% 50%;
+	}
+  100% 
+  {
+		background-position: 0% 50%;
+	}
+}
+
+.container 
+{
+  padding: 16px;
+}
+
+.container h1
+{
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.container hr 
+{
+  border: none;
+  background: linear-gradient(90deg,#1F75FE,skyblue);
+  height: 2px;
+}
+
+.box
+{
+  padding: 15px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  font-size: 17px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus 
+{
+  background-color: #ddd;
+  outline: none;
+}
+
+.container .policy
+{
+  padding-top: 10px;
+  color: white;
+}
+
+.container .policy a
+{
+  color:white;
+}
+
+@media only screen and (min-width:900px)
+{
+  .container hr 
+  {
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  .main-container .icon1
+  {
+    margin-top: 140px;
+    margin-left: 140px;
+    width: 128px;
+    height: 128px;
+    background-image: url(hospital-icons/1.png);  
+  }
+  .main-container .icon2
+  {
+    margin-top: -110px;
+    position: relative;
+    left: 80%;
+    width: 128px;
+    height: 128px;
+    background-image: url(hospital-icons/2.png);  
+  }
+  .main-container .icon3
+  {
+    margin-top: 160px;
+    margin-left: 140px;
+    width: 128px;
+    height: 128px;
+    background-image: url(hospital-icons/3.png);  
+  }
+  .main-container .icon4
+  {
+      margin-top: -110px;
+      position: relative;
+      left: 80%;
+    width: 128px;
+    height: 128px;
+    background-image: url(hospital-icons/4.png);  
+  }
+  .main-container .icon5
+  {
+    margin-top: 180px;
+    margin-left: 140px;
+    width: 128px;
+    height: 128px;
+    background-image: url(hospital-icons/6.png);  
+  }
+  .main-container .icon6
+  {
+    margin-top: -110px;
+      position: relative;
+      left: 80%;
+    width: 128px;
+    height: 128px;
+    background-image: url(hospital-icons/7.png);  
+  }
+  .container
+  {
+  padding: 0 30%;
+  margin-top: -60%;
+  }
+  .container p
+  {
+    font-size: 18px;
+  }
+  .container .policy a:hover
+  {
+    color: blue;
+  }
+}
+.btn-grad 
+{
+  background-image: linear-gradient(to right, #5e13a3 0%, #26D0CE  51%, #1A2980  100%)
+}
+.btn-grad 
+{
+
+  font-size: 18px;
+  color: white;
+  margin: 10px auto;
+  padding: 15px 55px;
+  text-transform: uppercase;
+  transition: 0.7s;
+  background-size: 200% auto;            
+  border-style: none;
+  display: block;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+
+
+.btn-grad:hover 
+{
+
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+

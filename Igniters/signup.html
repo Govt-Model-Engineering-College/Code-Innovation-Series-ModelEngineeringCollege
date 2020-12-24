@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vital Essence</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="icon1"></div>
+      <div class="icon2"></div>
+      <div class="icon3"></div>
+      <div class="icon4"></div>
+      <div class="icon5"></div>
+      <div class="icon6"></div>
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <div class="box">
+          
+          <label for="name"><b>Name</b></label>
+          <input id="name1" type="text" placeholder="Enter Name" name="name" required>
+          
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+          
+          <label for="phone"><b>Contact Number</b></label>
+          <input type="text" placeholder="Enter contact number" name="phone" required>
+          
+          <label for="aadhar number"><b>Aadhar Card Number</b></label>
+          <input type="text" placeholder="Enter Aadhar card number" name="aadhar number" required>
+          
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+        </div>
+        
+        <p class="policy">By creating an account you agree to our <a href="under_construction.html">Terms & Privacy</a>.</p>
+        <a href="new_user.html" class="btn">
+          <button onclick=mylocal()  type="submit" class="btn-grad signupbtn">Sign Up</button>
+        </a>
+
+      </div>
+    </div>
+    <script>
+      function mylocal(){
+                var getValue = $('#name1').val();
+               console.log(getValue)
+               localStorage.setItem("key",getValue)
+           }
+   
+   </script>
+  </body>
+</html>
