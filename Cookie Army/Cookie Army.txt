@@ -1,0 +1,53 @@
+
+MEDWISE – Personal Health Assistant App
+=======================================
+- by Cookie Army
+
+
+The current scenario, dealing with the COVID 19 pandemic has caused a lot of trouble and loss in all the sectors of global economy. 
+One among the most affected is our health sector. Health workers in each country are busy with treating the ever-increasing number of COVID 19 patients in the range of 10000s each day. This has caused a huge dejection in the treatment of people with other health issues. Physical presence of patients at health centres and hospitals is not an option these days. People often keep themselves away from consulting a doctor and stick to home remedies to get a temporary relief. Thus, this situation calls for technologies which can be used from home or that our doctors can use to improve or support health care services.
+
+MedWise is an app that connects patients to doctors through a secure mobile phone platform. 
+
+Our app provides patient users the convenience of chatting with their doctors. It also helps in the consultation and check-ups of the patient using videocall platforms. To-dos are included in the app which has the patient’s routine planned either by the doctor or by the patient himself. It reminds the patient about his daily activity/routine to be followed and weekly report of the patient is sent to the respective doctor. The app is not only compatible for a single person but can also be used for a family by forming different personal accounts. Also, the doctors for a patient are not limited. The app facilitates the possibility of consultation/monitoring of patient with multiple doctors; patient with several health issues can maintain contact with doctors with different specialisation using a single app. Chat, call and video call facilities for consultation. Last but not the least, doctors are able to bring their care to more patients and get paid without the extra overhead. 
+
+
+Contents of project directory:
+------------------------------
+* Medwise/lib -> code for all the screens and widgets is in this folder
+	   |
+	   |_main.dart
+	   |
+	   |_ models		
+	   |	    doctor.dart	 
+	   |	    history.dart
+	   |	    task.dart
+	   |
+	   |_screens
+	   |	    home_page.dart
+	   |	    analysis_page.dart
+	   |	    connect_page.dart
+	   |	    doctor_details.dart
+	   |	    history_page.dart
+	   |	    new_task.dart
+	   |	    profile_page.dart
+	   |	    task_page.dart
+	   |
+	   |_widgets
+	   	    chart.dart
+	   	    date.dart
+	   	    doctors_list.dart
+	   	    task_list.dart
+
+* Medwise/pubspec.yaml -> Contains all the dependencies
+* Medwise/assets -> Contains all assets(images,fonts etc)
+
+
+Ways to host project:
+---------------------
+It is a Flutter app and can be run on android.
+
+
+Demo video and presentation link:
+---------------------------------
+https://drive.google.com/drive/folders/1TtFunKgkLSvvgLyWSiu3Y5FUI67yYrwd?usp=sharing
