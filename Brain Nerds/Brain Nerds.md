@@ -7,7 +7,7 @@
 
 A personal medical assistant application is a necessity of the hour. The uprising of a pandemic forced people to stay in their homes and seeking healthcare from professionals became a difficult and risky process. Doctors also faced difficulties in providing their services to people. Even in a ‘world without the pandemic’, online consultation and other medical services make human life easier. 
 
-In this application, we are providing multiple features in a user-friendly manner. There are provisions suitable for people of every age group and are designed to use authorized databases only. 
+In this application, we are providing multiple features in a user-friendly manner. There are provisions suitable for people of every age group and are designed to collect data from credible sources only. 
 
 **Introduction**
 
