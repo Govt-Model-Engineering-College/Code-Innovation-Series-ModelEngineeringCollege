@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Events</title>
+    <style type="text/css">
+    
+    #slider{
+        overflow: hidden;
+    }
+    #slider figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+    }
+    #slider figure img{
+        float: left;
+        width: 20%;
+    }
+   
+
+    @keyframes slider{
+        0%{
+            left: 0;
+        }
+        20%{
+            left: 0;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left:-200%;
+        }
+        70%{
+            left: -200%;
+        }
+        75%{
+            left:-300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -400%;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div id="slider">
+        <figure>
+            <img src="images/img1.jpg">
+            <img src="images/img2.png">
+            <img src="images/img3.jpg">
+            <img src="images/img4.jpg">
+            <img src="images/img1.jpg">
+        </figure>
+    </div>
+    <h1 align = "right"><i><b>STAY UPDATED WITH US...</b></i></h1>
