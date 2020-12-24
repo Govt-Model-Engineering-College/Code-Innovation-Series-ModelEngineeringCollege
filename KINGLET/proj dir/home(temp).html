@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+{% block content %}
+<h1>HELLO {{name}}!!!</h1>
+
+<form action="add" method="POST">
+    {% csrf_token%}
+    Enter Age: <input type="text" name="num1"><br>
+    Enter Gender: <input type="text" name="gen"><br>
+    Enter Weight(kg):<input type="text" name="num2"><br>
+    Enter Height(m):<input type="text" name="num3"><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
