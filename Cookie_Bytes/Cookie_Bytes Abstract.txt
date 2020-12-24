@@ -1,0 +1,141 @@
+﻿Cookie The Doggie: 
+Your New Bestie! 
+
+
+Topic
+HealthTech: Improvement of Mental Health.
+
+
+Team Name
+Cookie_Bytes
+
+
+Team Members
+* Elizabeth Mary Mathew
+* Nayana Vinod
+* Vishnumaya S Unni
+
+
+Our basic website for a brief idea(currently desktop view enabled): https://elizabeth-mathew1.github.io/Cookie_GHCI/
+
+
+Our Idea
+The world is going through a tough time. To fight this battle against the novel coronavirus, each and everyone must stay healthy, not just physically but both mentally and emotionally. Mental Health is an untouched topic which we think, should be given higher importance, especially during these dire situations and mundane circumstances. According to the United Nations, depression is ranked third in the global burden of disease and is projected to rank first in 2030. In the Post-COVID world, mental health is going to become a grave issue, and hence we would like to address it as early as possible. 
+
+
+The main problems related to mental health in the post-COVID world are:
+1. Inaccessibility of proper or frequent sessions and therapies with doctors or psychologists in person. 
+2. Incapable to afford online therapies with psychologists
+3. The sudden change in lifestyle can cause anxiety issues among individuals.
+4. Missing loved ones and always in loss of interest or motivation to continue life engagements and activities.
+5. Work pressure for healthcare and welfare workers.
+6. Ignorant about daily routines which may cause other health problems.
+7. Difficulty in finding a reason or purpose to live or continue life.
+8. Discrimination of the affected people and their closed ones may also lead to clinical depression. 
+
+
+Why did we choose a pet to approach this domain? 
+* According to the Centers for Disease Control and Prevention, pets can manage loneliness and depression by giving us companionship. Studies have shown that the bond between people and their pets can increase fitness, lower stress, and bring happiness to their owners. 
+* According to the Help Guide Organization, pets like dogs and cats are found to be a great source of stress-reliever and spending time with them can reduce mental health and emotional issues like depression, anxiety and loneliness. The way they interact and play with us encourages us to be active as well. Caring for an animal will let them show how important and valuable it is to live a life and people tend to feel more secure and happy with a companionship. 
+
+
+Why did we choose a dog? 
+* In simple terms, dogs have been known to be man’s best friend, since a very long time. A study in Europe has found that domestication of dogs happened 20000-40000 years ago. Dogs are the most popular pets in the world and owned by 33% of respondents. 
+* These animals are our faithful companions with whom we feel secure and loved the most. An experiment issued in March 2009 proved that while interacting with a dog, the level of oxytocin hormones that are the love hormones, are found to be increased in both the individuals and the dogs. Similarly, interacting and playing with a dog can elevate the amount of serotonin and dopamine which will calm and relax both your mind and body.  
+* It is also found that hypertension and anxiety issues are found to be declined significantly in people who adopt a dog from a shelter. This is exactly why dogs are often used as therapy animals.
+
+
+So, Cookie is our solution for people who don’t have pets, who are allergic to pets or who cannot afford to have a pet. A virtual dog is all you need to stay peaceful and happy especially during the post-COVID situation.
+We must realise, taking our real-life dogs out for exercising and walking is going to be limited during the post-COVID time because of the social distancing protocols and hence it would be better to have a virtual dog which does not require high maintenance or expenses. 
+
+
+In the post-COVID world, Cookie will always be there for you anywhere at any time. When you can’t sleep at 4:00 AM, Cookie will help you. When you feel lonely and isolated from your friends and loved ones, Cookie will be there for you. When you don’t have the motivation to do your daily chores and activities, Cookie will encourage you.
+
+
+How are we going to make Cookie interact with individuals?
+* Our app will provide two important features for interaction. One will be the AR-based dog, Cookie and another one will be a chatbot where you can talk with Cookie. 
+* Our AR-based dog will be completely like any other normal dog which can woof, bark, nod their heads, wag their tails, walk and run around, and some simple characteristics in the beginning. We are also planning to improve and add some enhanced features like licking, cuddling, and more complex behavioural aspects of a real-life dog. 
+* Our chatbot will daily update and interact with the users according to their moods and emotions. It will ask the users about their day and remind them to do the basic necessities like eating, drinking, cleaning, sleeping, exercising and many more. It can also provide music and video recommendations which will help you boost your mood. It will always encourage and motivate you to study, work, and engage in all the events and activities.
+* Users can also form groups with like-minded people in sharing their interests and feelings which will be fully supported by Cookie.
+* In case of emergencies, the chatbot will also ensure to provide you with important contact details, websites, and other information to seek professional help from therapists around the world and specifically in their region as well. It will be easier for them to connect and find the right people to open up and share their thoughts for professional advice and treatment. 
+
+
+How can we ensure data security and safety?
+* We don’t misuse any kinds of user’s data for our publicity or advertising. It is completely free of expense with a sole purpose and full focus on the betterment of the mental health of the people around the world. 
+* However, we require data to personalize Cookie according to the user’s situation and condition. We also ensure, in case if the users do not want to disclose any kind of information they can turn this feature off.
+* So, you can use Cookie without any personalized features as a normal application only when in time of need or requirement.
+
+
+What is our theme based on?
+* Our choice of colours for the application is completely based on colour psychology. Certain colours can improve and enhance our moods and emotions. Hence, after thorough research and studies, we fixed our colour theme such that the user will get a better experience and be comfortable with our App.
+* The pictures used are also connected to mental well-being. We are also planning to add our own illustrations and pictures created by the team in the future with characters and Cookie to make it more user-friendly. 
+
+
+Technologies and Softwares Used
+* Flutter as the development environment
+* Dart as the programming language
+* ARcore as the Software Development Kit
+* Blender for 3D modelling and animation
+* DialogFlow as the framework for Natural Language Processing
+* Firebase as the database.
+* Android Studio for integration.
+* HTML, CSS, JS for website
+
+
+Intended Approach
+We aim to provide a user-friendly and pleasant platform for people to improve their mental health at free of cost. We envision building a healthy community of peaceful and happy minds. We will be developing the application using flutter and ARcore such that it will be available to all android users. We will be implementing the AR puppy using the inbuilt phone camera itself. The users can chat with Cookie using a chatbot which we are planning to develop using DialogFlow. Also, our application will be providing the best experience using animation and 3D modelling with Blender. All the relevant and useful information and data will be added in the application as per the user’s requirements and needs. The aesthetic and pleasant appearance will be ensured with our chosen colour themes and images. 
+
+
+Special Features
+* Cookie Scale: Food scale, Water Scale and Sleep Scale.
+* Personal Goals and Targets.
+* Scientifically approved therapy sessions or exercises.
+* In case of urgent help, Cookie will provide an emergency helpline and other relevant contact information.
+* We are also developing different AR models for a variety of breeds.
+* We will also personalize the voice of Cookie bot.
+Implementation Roles
+We will be working on every stage together as a team. However, we have decided to lead each topic by each member of the team for improved teamwork, organisation and coordination. 
+
+
+Technical:
+Flutter- Elizabeth Mary Mathew
+Dart- Elizabeth Mary Mathew
+ARcore- Nayana Vinod
+Blender -Nayana Vinod
+DialogFlow- Vishnumaya Unni
+Firebase- Vishnumaya Unni
+
+
+Non-technical:
+Content Development: Vishnumaya S Unni
+Designing: Elizabeth Mary Mathew and Nayana Vinod 
+Doodles and illustrations: Vishnumaya S Unni 
+
+
+Webpage Creation:
+Elizabeth Mary Mathew 
+Nayana Vinod
+
+
+Possible Problems and Our Solutions
+
+
+Problem 1: Increased screen time may affect physical health.
+Solution: Cookie will alert and send a reminder. 
+How: Cookie will tell it's tired and wishes to get some rest.
+
+
+Problem 2: Certification from professional doctors will be needed. Since it may affect their jobs leading to income shortage, there is a possibility that they will refuse to provide certification and support. Hence the support from professionals will be required.
+Solution: Payment for professional doctors.
+How: Hiring professional doctors is an option. The possible marginal profit can be paid as their consultation fee by the App itself. 
+
+
+Other Credits for our resources: 
+* Undraw (Illustrations)
+* Unsplash(Pictures)
+
+
+
+
+Thank You!
+……………………………………………….
