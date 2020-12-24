@@ -1,0 +1,48 @@
+medscore is a comprensive health monitoring solution,which provides predictive signal to user on the basis of their medscore.medscore is  scientifically researched lifestyle change program based on certain fundamental principles proven to help you achieve optimum health.
+it serves as a centralized database for health information 
+
+our project directory consist of 9 files.
+login.php:the main aspect of this module is allow user to login in to medscore site by providing their username and password
+register.php: this is to handle user new to medscore. It allow users to create their username and  password which can be further used for login.
+index.php:it is the main access point for medscore site.User's medscore as well as all the details related  to the user is displayed here.It is the starting point for all the features provided by the medscore site.
+insertion.php:allow user to insert data which will be securely stored in the database and needed to predict the medscore
+update.php: allow user to update data incase  if any changes had happened
+knowscore.php:allows user to know their health score on the  basis of data they provided.
+server.php:handle data inserted through login.php and register.php ans store it on the sever database.Traps errors while loging in or out or while registerig.
+sever2.php.php:handles data inserted through insertion.php and store to data base
+server3.php:handles data inserted through update.php and  updates the data base
+server4.php:helps to retrive health score of a particular user from data base if it has been caluculated earlier.
+errors.php: used to provide necessary warnigs if errors are found.
+
+
+
+
+PHP is the most popular web backend programming language. A PHP code will run as a web server module or as a command-line interface. To run PHP for the web, you need to install a Web Server like Apache and you also need a database server like MySQL. There are various web servers for running PHP programs like WAMP & XAMPP. WAMP server is supported in windows and XAMP is supported in both Windows and Linux.
+
+Xampp stands for Cross platform(x), Apache(a), Maria db(m), PHP(p), Pearl(p) which is a software distribution server which makes developer’s work eaiser for testing and deploying by creating a local web server.
+ 
+How to install Xampp?
+It is completely free and easy to install Apache distribution containing MySQL, PHP, and Perl. First, download XAMP from https://www.apachefriends.org/download.html. In the first page, select the components you want to install.
+
+Select the installation directory so that all the components that you choose will be installed in this directory.
+
+XAMP also allows you to easily install PHP based applications.  After the installation you will see the control panel.
+
+Once you are done with Xampp installation, let’s move ahead and see how to run a PHP file in xampp server.
+
+Write this program in a notepad and save it as file.php or any other name.
+
+<?php echo " hello ashok" ?>
+After completion of the installation, you can use the XAMPP Control Panel to start/ stop all servers.
+
+Start Mysql and Apache servers.
+
+Copy file.php to htdocs (C:/Program Files/XAMPP/htdocs)
+
+You can also create any folders inside htdocs folder and save our codes over there.
+
+In order to get the dashboard for localhost: search http://localhost in any browser.
+
+Now to run your code, open localhost/file.php in your browser ,then it gets executed resulting in a web page showing "hello ashok" .
+
+
