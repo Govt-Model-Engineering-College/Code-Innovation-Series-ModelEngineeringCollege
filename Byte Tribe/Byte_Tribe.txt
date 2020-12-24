@@ -1,0 +1,44 @@
+                   EXAM WAND
+Project background/Introduction
+Globally the education system has taken a big leap towards 
+virtualization. Thus we have developed an app that provides an 
+effortless mode of answer script evaluation.  
+
+About the App:
+It consists of a student’s interface and a teacher’s interface either of 
+which can be chosen at the beginning. The student’s interface consists 
+of an image picker to take the pictures of answer sheets whose words 
+are extracted using Optical Character Recognition (OCR) which is 
+implemented using the firebase ml toolkit. The extracted words are then 
+converted into a .pdf file. We’ve also provided an option to edit the pdf 
+by replacing any word in the string with a new word. The file thus 
+created is sent to the teacher’s interface and each answer in an answer 
+script is stored as the elements of an array of Strings. The evaluation 
+process is performed using ml Text-similarity method and marks are 
+provided in accordance with the percentage similarity. The ml code is 
+run at the backend of a web API generated with Python using Flask and 
+a request which consists of the Question-ID, name of the student, the 
+corresponding answer in the array and the correct answer is sent from 
+the teacher’s interface.
+In the future we also intend to provide various other features like tools to 
+detect plagiarism, online interactive classrooms and facility to conduct 
+short tests.
+
+Contents:
+>	main.dart – It consists of an alert box to choose your designation.         
+                   (Student/Teacher)
+>	student.dart – The students interface.
+>	teacher.dart - The teacher’s interface.
+>	contents.dart – Contents of the dropdown menu.
+>	create_pdf.dart – Function to create pdf.
+>	User_Model.dart – json response from the API.  
+>	Text_similarity.python – ML Text-Similarity code.
+
+
+
+Ways to host the project on the Local Host
+The Flutter files can be run on both Android Studio and Visual Studio.
+The web API is run using Flask in Visual Studio and the response is 
+obtained in the flutter app.
+        
+
