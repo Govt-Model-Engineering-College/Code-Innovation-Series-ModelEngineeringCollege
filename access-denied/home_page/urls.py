@@ -9,6 +9,6 @@ urlpatterns = [
     path('login/', views.loginuser, name='loginuser'),
     path('logout/', views.logoutuser, name='logoutuser'),
 
-    path('donor/details/<str:username>/', views.donor_details, name='donor_details'),
+    path('donor/details/', views.donor_details, name='donor_details'),
     path('donor/edit/', views.create_donor, name='edit_donor'),
 ]

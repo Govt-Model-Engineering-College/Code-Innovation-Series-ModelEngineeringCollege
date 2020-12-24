@@ -19,10 +19,10 @@
         {% for donor in d_filter %}
             <tbody>
                 <tr>
-                    <td><a href="{% url 'donor_list_detail' donor.email %}">{{donor.name}}</a></td>
+                    <td><a href="{% url 'donor_list_detail' %}">{{donor.name}}</a></td>
                     <td>{{donor.blood_group | capfirst }}</td>
-                    <td>{{donor.last_donate_date}}</td>
-                    <td>{{donor.home_address}}</td>
+                    <td>{{donor.last_donation_date}}</td>
+                    <td>{{donor.address}}</td>
                 </tr>
             </tbody>
         {% endfor %}
