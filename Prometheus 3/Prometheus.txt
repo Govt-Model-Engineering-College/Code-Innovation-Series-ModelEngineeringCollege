@@ -1,12 +1,14 @@
 Team Name : Prometheus
 Team Members : 
-Rahul R CS5A Roll No. 49
-Liya Elizebeth Jose CS5B Roll No. 30 
-George M Cheriyan CS5A Roll No. 28
+    Rahul R CS5A Roll No. 49
+    Liya Elizebeth Jose CS5B Roll No. 30 
+    George M Cheriyan CS5A Roll No. 28
+
 --------------------------------------------------
 Project Name : CrowdPay
 Project Idea : Our Idea is to create an online peer-to-peer lending platform which enables borrowers to access affordable fixed-rate, fixed-term unsecured personal loans between Rs.1,000 to 50,000. Investors have the opportunity to earn solid returns via traditional state agencies doubling in as underwriters. The borrowers will be classified based on various aspect like health status, occupation, life style, financial risk factor into minimal, low, medium, high, very high, unrated risk categories.
 Project Repository : https://github.com/prometheus-corps/frontend-flutter
+
 --------------------------------------------------
 Project File Details: 
 
@@ -18,7 +20,6 @@ Project File Details:
     Apk File /
         app-arm64-v8a-release.apk  
         app-armeabi-v7a-release.apk  
-        app-debug.apk  
         app-x86_64-release.apk
         
     Screenshots /
@@ -35,5 +36,6 @@ Project File Details:
         011.jpeg
         Borrower.png
         Lender.png
+        
 -------------------------------------------------------
 Prometheus PPT URL : https://drive.google.com/file/d/1ecctLof8_v4BGRrCYGkB1dP4zA7waXJ7/view?usp=sharing
