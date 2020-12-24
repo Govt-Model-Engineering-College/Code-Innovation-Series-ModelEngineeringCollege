@@ -1,0 +1,74 @@
+{% extends "home_page/base.html" %}
+
+{% block content %}
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5">
+            <h2>New Donor</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5">
+            {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error }}
+                </div>
+            {% endif %}
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">Name</label>
+                   {{ donor.name }}
+                   <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    {{ donor.gender }}
+                    <input type="text" name="gender" class="form-control" id="gender">
+                </div>
+                <div class="form-group">
+                    <label for="blood_group">Blood Group</label>
+                    {{ donor.blood_group }}
+                    <input type="text" name="blood_group" class="form-control" id="blood_group">
+                </div>
+                <div class="form-group">
+                    <label for="date_of_birth">Date of Birth</label>
+                    {{ donor.date_of_birth }}
+                    <input type="date" name="dob" class="form-control" id="dob">
+                </div>
+                <div class="form-group">
+                    <label for="phone_number">Phone Number</label>
+                   {{ donor.phone_number }}
+                   <input type="number" name="username" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    {{ donor.email }}
+                    <input type="email" name="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    {{ donor.address }}
+                    <input type="text" name="address" class="form-control" id="address">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    {{ donor.location }}
+                    <input type="text" name="location" class="form-control" id="location">
+                </div>
+                <div class="form-group">
+                    <label for="last_donation_date">Last donation date</label>
+                    {{ donor.last_donation_date }}
+                    <input type="date" name="donation" class="form-control" id="donation">
+                </div>
+                <div class="form-group">
+                    <label for="disease">disease</label>
+                    {{ donor.disease }}
+                    <input type="text" name="username" class="form-control" id="username">
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>  
+    <br>
+    <br>
+{% endblock %}
