@@ -1,0 +1,14 @@
+Patient DB Manager
+Team - Underdogs
+
+DESCRIPTION
+Our web app provides features to make establishment management easier and efficient for medical practitioners. It functions as a health data record for patients.
+
+The project is still very much a work in progress.
+
+.env variables -
+DB_CONNECT
+TOKEN_SECRET
+
+
+
