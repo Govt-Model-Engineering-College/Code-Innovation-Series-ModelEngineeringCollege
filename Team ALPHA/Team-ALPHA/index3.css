@@ -1,0 +1,98 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(250, 249, 248);
+
+
+}
+
+.list{
+    position: relative;
+    
+
+}
+.list h1{
+    position: relative;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px
+    
+    
+
+}
+.list ul {
+    position: relative;
+    
+
+} 
+.list ul li {
+    position: relative;
+    border-left: rgb(34, 210, 233);
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+    left: 0px;
+    font-size: 20px;
+    padding-right: 400px;
+    display: block;
+
+
+}
+.list ul li:hover {
+
+    left: 20px;
+    background-color: rgb(22, 219, 98);
+    color: rgb(3, 15, 1);
+}
+.list ul li span{
+    position: relative;
+    padding: 8px;
+    display: inline-block;
+    z-index: 1;
+    margin: 4px 0;
+    border-left: 2px solid rgb(47, 206, 235);
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+    
+    
+}
+
+.list ul li::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(94, 235, 89);
+    transform: scaleX(0);
+    transition: 0.5s;
+
+    
+}
+a {
+    color: black;
+}
+
+.list ul li:hover::before{
+    transform: scaleX(10);
+
+}
+.list ul li:hover{
+    left: 10px;
+
+
+}
+.list ul li span{
+
+    position: relative;
+    padding: 8px;
+    z-index: 1;
+    transition: 0.5;
+
+}
+.list ul li:hover span{
+    color: rgb(17, 219, 61);
+}
