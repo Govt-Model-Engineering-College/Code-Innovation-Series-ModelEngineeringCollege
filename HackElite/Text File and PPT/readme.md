@@ -5,7 +5,7 @@ Kindly dowload the documents if not loading directly.
 The same are also available in the link:
 
 PPT:
-https://drive.google.com/file/d/1e-97jd23AFCTi1tp4KXL7YISMy8ukztX/view?usp=sharing
+https://drive.google.com/file/d/12ILq29vpiBnw32FcKik6hqy294w5EjIR/view?usp=sharing
 
 Text Document:
-https://drive.google.com/file/d/1q78yzD_79GK657RNsqWAdzyB4-f-sfQ4/view?usp=sharing
+https://drive.google.com/file/d/1RfaZl2ouvonpPFrtdO-FSDCRs0QBu3v3/view?usp=sharing
