@@ -1,0 +1,40 @@
+﻿MINERVANS
+MEC-2022 Batch              Team Members: Abhishek S Kurup
+                                                      Kaveri Menoki
+                                                                    Sandra Elizabeth Sabu
+                                                       Teena Vincent
+
+
+1. Project Description
+       Minervans is an online website which helps in the education field to be updated and learn modern technologies as they progress and evolve. This website contains daily news related to technology, the new trends, and the latest updates. Now for the learning purpose, in order to get an idea before starting to learn a new technology, road maps are provided. Roadmaps provide a clear-cut idea by providing the steps to learn, the resources required, and how to start. This helps in bridging the initial struggles. Now for learning resources a collection of the best YouTube Playlists of each domain is also provided which can be viewed both from our website and also targeted to YouTube. Each of these playlists has the best teachers with great reviews. The playlists are customisable as per the user's wish to learn only the domains needed for them. Sign-in option is also provided.Each user has their own profile using which they can modify their YouTube playlist.
+ 
+
+
+
+
+2. Project Directory Contents
+ 2.1 index.html
+         The index.html is the Home page which contains the description regarding the website and sign-in option is also provided here.
+2.2 news.html
+      The news.html page contains the daily news related to technology.
+2.3 maps.html
+       The maps.html page contains the road maps to each domain along with its resources and detailed step-by-step approach.
+    
+2.4 playlist.html
+        The playlist.html page contains list of some best videos of different domains.For eg. We have  a collection of YouTube Playlists of different domains section-wise. The star button in each playlist helps users to customise the needed playlists only which will be available in the favourites page. Videos can be viewed both on this page and from YouTube.
+
+
+2.5 favourites.html
+        The favourites.html page contains the custom YouTube playlists chosen by the user as per their wish.
+
+
+
+
+
+
+
+
+
+
+3. Ways to host project on the localhost
+We are currently planning to host this website in GitHub.
