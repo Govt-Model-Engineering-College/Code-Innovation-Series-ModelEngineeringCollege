@@ -1,0 +1,13 @@
+Project Description
+Edugram is an app that provides the faculty with all the resources required to take classes for the students and monitor their learning and at the same time also provides the students with interactive and easy to access courses, thus improving their e-learning experience.
+
+
+
+Contents of project directory
+
+flutterapp contains dart files for splash screen, login page, home page of the app, profile page, course list page, search screen and individual courses screens.
+It contains directory for the assets used in the project - fonts and images
+
+
+
+Project is hosted using flutter
