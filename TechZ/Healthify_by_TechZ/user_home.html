@@ -1,0 +1,150 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  
+  .split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+
+}
+
+.centered {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.alert.success {background-color: #4CAF50;}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.alert {
+  padding: 20px;
+
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+<div class="split left">
+<div class="centered">
+<h1>Hello User</h1><hr>
+<p>Your temperature:Normal</p>
+<p>Your pulse:Normal</p>
+<p>Your blood pressure:Normal</p><br><hr><br>
+<P style="background: red" colo>ARE YOU COVID +VE AND IN HOME QUARATINE?<br>NOT FEELING WELL AND NOT ABLE TO REACH TO A DOCTOR?<BR> DON'T WORRY... :)<br>WE WILL CONNECT YOU WITH A DOCTOR.<BR>JUST FILL IN THE FOLLOWING AND WE WILL GET IN TOUCH WITH YOU SOON..<BR></p>
+<form action="#">
+WHERE ARE YOU NOW:<br><textarea rows = "5" cols = "50" name = "description">
+Enter address here here...
+</textarea><br><br>
+
+MENTION YOUR SYMPTOMS:<BR><input type="checkbox" name="fever">Fever
+<input type="checkbox" name="muscle_pain">Muscle pain
+<input type="checkbox" name="sore_throat">Sore throat
+<input type="checkbox" name="head_ache">Head ache<br><br>
+
+YOUR PHONE NO:<BR><input type="text" name="phno"><br><br>
+
+WHEN YOU TESTED COVID +VE:<BR> <input type="date" name="date"><br><br>
+
+ANY ADDITIONAL INFORMATION:<BR>
+<textarea rows = "5" cols = "50" name = "ADDINFO">
+Enter description here...
+</textarea><br><br><br>
+
+<input type="button" name="submit" value="Submit"><br><br><br>
+</form>
+<hr>
+<h2 style="color:blue;">OR</h2>
+
+<P style="background: red" colo>ARE YOU FEELING ALONE AND DEPRESSED?<BR>DON'T WORRY:)<BR>FILL IN THESE AND WE WILL GET IN TOUCH WITH YOU<BR><BR></p>
+<form action="#">
+
+
+
+
+<p>YOUR PHONE NO:<BR><input type="text" name="phno"><br><br>
+
+
+
+MENTION YOUR PROBLEMS:<BR>
+<textarea rows = "5" cols = "50" name = "ADDINFO">
+  Enter description here...
+ </textarea><br><br><br>
+
+<input type="button" name="submit" value="Submit"><br><br>
+
+<form>
+
+</div>
+
+</div>
+
+<div class="split right">
+<div class ="alert">
+<div class="alert success">
+  <span class="closebtn">&times;</span>
+  <strong>Hey!</strong> You have no messages for now.
+</div>
+</div>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+close[i].onclick = function(){
+var div = this.parentElement;
+div.style.opacity = "0";
+setTimeout(function(){ div.style.display = "none"; }, 600);
+}
+}
+</script>
+
+<div style="text-align:center;">
+  <p>Message box..</p>
+</div>
+
+
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    .alert.success {background-color: #4CAF50;}
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+
+    .alert {
+      padding: 20px;
+
+      color: white;
+      opacity: 1;
+      transition: opacity 0.6s;
+      margin-bottom: 15px;
+    }
+
+    </style>
+
+<body>
+
+  <div style="text-align:center;">
+    <h3>"A good physician treats the disease,<br>
+      The great physician treats the patient who has the disease"<br>
+                    ~William Osler</h3>
+
+    <h2>Have a Good day Doctor:)</h2></div>
+    <div style="text-align:center;"><p>Your messages...</p></div><hr>
+  <div class ="alert">
+  <div class="alert success">
+    <span class="closebtn">&times;</span>
+    <strong>Hey!</strong> You have no messages for now.
+  </div>
+  </div>
+<br><br>
+  
+
+  
+
+  <div style="text-align: center;">
+    <h1>Your patients</h1>
+    <h1>*************</h1>
+    <h2><a href="patient_home1.html">Patient 1</a></h2>
+    <h2><a href="patient_home2.html">Patient 2</a></h2>
+  </div>
+  <script>
+  var close = document.getElementsByClassName("closebtn");
+  var i;
+
+  for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+  var div = this.parentElement;
+  div.style.opacity = "0";
+  setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+  }
+  </script>
+  </body>
+
+</html>
