@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="edu_app3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/edu_app/build/app/intermediates/flutter/debug/flutter_assets/assets/img/edu_app.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
