@@ -6,9 +6,9 @@ import pathway from './pathway.png'
 
 function Overview(){
 return(
- <div className="flex-container">
+ <div className="flex-container body">
  <div >
-    <img clasName ='pathway' src={pathway}/>
+    <img className ='pathway' src={pathway}/>
  </div>
  <div className= "sessions">  
         <Session/>

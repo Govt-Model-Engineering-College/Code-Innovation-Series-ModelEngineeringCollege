@@ -1,12 +1,13 @@
 .flex-container {
-    display: flex;
-    justify-content: space-around;
-  }
-.img{
+  display: flex;
+  justify-content: space-around;
+}
+.pathway {
   position: relative;
   top: 90px;
 }
 
-.sessions{
-  height:1900px;
+.sessions {
+  height: 1900px;
+  padding-top: 95px;
 }

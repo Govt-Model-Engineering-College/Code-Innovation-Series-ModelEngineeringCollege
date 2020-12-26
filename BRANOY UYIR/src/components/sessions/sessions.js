@@ -12,7 +12,7 @@ const Session = ()=> {
         </div>
   <div>
 
-        <div className="courses-container">
+        <div className="courses-container body">
           <div className="course">
             <div className="course-preview">
               <h6>Course</h6>

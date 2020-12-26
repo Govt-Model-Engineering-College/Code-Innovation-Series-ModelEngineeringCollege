@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-.nav {
+* {
+  box-sizing: content-box;
+}
+
+.navbarone {
   padding: 30px;
+  box-shadow: 1px 0.1px;
 }
 
 .overview {
@@ -45,7 +50,7 @@
 }
 
 .search {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .profile {
@@ -53,5 +58,5 @@
 }
 
 .moon {
-  padding-left: 25px;
+  padding-left: 30px;
 }

@@ -4,11 +4,11 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { GiHamburgerMenu} from "react-icons/gi"
 import {BiSearch} from "react-icons/bi";
 import {CgProfile} from "react-icons/cg";
-import {BiMoon} from "react-icons/bi";
+import {BsMoon} from "react-icons/bs";
 
 function Navigation() {
  return(
- <div className = " nav container-fluid">
+ <div className = " navbarone container-fluid">
  <Navbar bg="light" variant="light">
 
     <Nav className="mr-auto">
@@ -18,7 +18,7 @@ function Navigation() {
       <Nav.Link className = "hackathons" href="#Hackathons">HACKATHONS</Nav.Link>
     <BiSearch className = "search" style ={{color: "#bfbfbf", fontSize: "1.5rem"}}/>
     <CgProfile className = "profile" style ={{color: "#bfbfbf", fontSize: "2rem"}}/>
-    <BiMoon className = "moon" style ={{color: "#bfbfbf", fontSize: "1.3rem"}}/>
+    <BsMoon className = "moon" style ={{color: "#bfbfbf", fontSize: "1.3rem"}}/>
     </Nav>
 
   </Navbar>
