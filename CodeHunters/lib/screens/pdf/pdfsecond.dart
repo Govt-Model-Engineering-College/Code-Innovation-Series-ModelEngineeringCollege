@@ -21,6 +21,7 @@ class _ViewPdfState extends State<ViewPdf> {
       });
     }
 
+    // ignore: non_constant_identifier_names, missing_return
     Widget Loading(){
       ViewNow();
       if(doc==null){
@@ -30,8 +31,9 @@ class _ViewPdfState extends State<ViewPdf> {
     }
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: Text("Retrieve Pdf"),
+        backgroundColor:  Color(0xff0e2433),
+        title: Text("Retrieve Report"),
+        centerTitle: true,
       ),
       body: doc==null?Loading():PDFViewer(document: doc),
     );

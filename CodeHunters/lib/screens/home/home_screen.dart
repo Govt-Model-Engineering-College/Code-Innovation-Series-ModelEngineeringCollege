@@ -1,7 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:health_app/screens/pages/search.dart';
 import 'package:health_app/screens/pdf/pdffirst.dart';
 import 'package:marquee/marquee.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -11,8 +10,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
- // Map<String,dynamic> obj = ModalRoute.of(context).settings.arguments;
- // String name1 = obj['name'];
+
     return Scaffold(
       body: Stack(
         children: [
@@ -25,7 +23,6 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 150.0,),
               Card(
                 color: Colors.blue[200],
-
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
@@ -82,7 +79,6 @@ class HomeScreen extends StatelessWidget {
                             style: TextStyle(fontSize: 20.0,color: Colors.blueAccent[900],fontWeight: FontWeight.bold),),
                         ],
                       ),
-                      //Text(name1)
                     ],
                   ),
                 ),

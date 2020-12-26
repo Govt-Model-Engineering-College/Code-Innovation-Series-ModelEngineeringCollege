@@ -15,22 +15,24 @@ class FirstPage extends StatefulWidget {
 }
 
 class _FirstPageState extends State<FirstPage> {
-  List<Modal> itemList = List();
+
+  List<Modal> itemList = [];
   final mainReference = FirebaseDatabase.instance.reference().child('Database');
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
+        centerTitle: true,
+        backgroundColor:  Color(0xff0e2433),
         title: Text("Report Storage"),
       ),
-      body: itemList.length ==0? Text("   Loading...") : ListView.builder(
+      body: itemList.length ==0? Text("Loading..." ,style: TextStyle(fontSize: 20.0),) : ListView.builder(
         itemCount: itemList.length,
         itemBuilder: (context, index) {
           return Padding(
               padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-              child: GestureDetector(
+              child:GestureDetector(
                 onTap: () {
                   String passData = itemList[index].link;
                   Navigator.push(
@@ -38,17 +40,19 @@ class _FirstPageState extends State<FirstPage> {
                       MaterialPageRoute(
                           builder: (context) => ViewPdf(),
                           settings: RouteSettings(
+                            arguments: passData,
                           )
                       )
                   );
                 },
+
                 child: Stack(
                   children: <Widget>[
                     Container(
                       height: 100,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/health.jpeg'),
+                          image: AssetImage('assets/image2.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -60,7 +64,7 @@ class _FirstPageState extends State<FirstPage> {
                           margin: EdgeInsets.all(18),
                           elevation: 7.0,
                           child: Center(
-                            child: Text(itemList[index].name + " " +
+                            child: Text( itemList[index].name + " " +
                                 (index + 1).toString()),
                           ),
                         ),
@@ -77,7 +81,7 @@ class _FirstPageState extends State<FirstPage> {
           getPdfAndUpload();
         },
         child: Icon(Icons.add, color: Colors.white,),
-        backgroundColor: Colors.blue[900],
+        backgroundColor: Color(0xff0e2433),
       ),
     );
   }
@@ -114,32 +118,29 @@ class _FirstPageState extends State<FirstPage> {
     var data = {
       "PDF": str,
       "FileName": "Report ",
-
     };
     mainReference.child(createCryptoRandomString()).set(data).then((v) {
       print("Store Successfully");
     });
   }
-
   @override
 
+  // ignore: must_call_super
   void initState() {
     mainReference.once().then((DataSnapshot snap) {
+      itemList.clear();
       var data = snap.value;
-      print(data);
-      //Map<dynamic, dynamic> values = snap.value;
-      //print(values);
-      data.forEach((key, value) {
-        Modal m = new Modal(key['PDF'], value['Filename']);
-        print(m);
-        itemList.add(m);
 
+      data.forEach((key, value) {
+        Modal m = new Modal(value["PDF"], value["FileName"]);
+        itemList.add(m);
 
       });
       setState(() {
-        print(itemList.length);
+
       });
     });
   }
 
 }
+

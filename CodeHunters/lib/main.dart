@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:health_app/models/user.dart';
 import 'package:health_app/screens/home/home.dart';
 import 'package:health_app/screens/home/home_screen.dart';
-import 'package:health_app/screens/home/profile.dart';
 import 'package:health_app/screens/pages/fixAppointment.dart';
 import 'package:health_app/screens/pages/loading.dart';
 import 'package:health_app/screens/pages/results.dart';

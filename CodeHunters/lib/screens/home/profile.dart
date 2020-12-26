@@ -1,4 +1,6 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -12,18 +14,13 @@ class _ProfilePageState extends State<ProfilePage> {
   String phoneno = " ";
   String age = " ";
   final _formKey1 = GlobalKey<FormState>();
-  final myController = TextEditingController();
+  final profile = FirebaseDatabase.instance.reference().child('Profile');
 
-  @override
-  void dispose() {
-     //Clean up the controller when the widget is disposed.
-    myController.dispose();
-    super.dispose();
-  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        resizeToAvoidBottomPadding : false,
+      resizeToAvoidBottomPadding : false,
       backgroundColor: Color(0xff3792cb),
       body:Form(
         key: _formKey1,
@@ -33,81 +30,91 @@ class _ProfilePageState extends State<ProfilePage> {
             SizedBox(height: 60.0,),
             TextFormField(
                 style: TextStyle(fontSize: 25.0),
-                controller: myController,
                 decoration: const InputDecoration(
-                hintText: 'Enter your name',
-                labelText: 'Name',
-              ),
+                  hintText: 'Enter your name',
+                  labelText: 'Name',
+                ),
                 validator: (val) => val.isEmpty ? 'Name is mandatory': null,
                 onChanged: (val){
-                setState(() => name = val);}
-                ),
+                  setState(() => name = val);}
+            ),
             TextFormField(
                 style: TextStyle(fontSize: 25.0),
-              decoration: const InputDecoration(
-                hintText: 'Enter your location',
-                labelText: 'Location',
+                decoration: const InputDecoration(
+                  hintText: 'Enter your location',
+                  labelText: 'Location',
                 ),
 
                 validator: (val) => val.isEmpty ? 'Location is mandatory': null,
                 onChanged: (val){
-                setState(() => location = val);}
-                ),
+                  setState(() => location = val);}
+            ),
 
             TextFormField(
                 style: TextStyle(fontSize: 25.0),
-              decoration: const InputDecoration(
-                hintText: 'Enter your Bloodgroup',
-                labelText: 'BloodGroup',
+                decoration: const InputDecoration(
+                  hintText: 'Enter your Bloodgroup',
+                  labelText: 'BloodGroup',
                 ),
                 validator: (val) => val.isEmpty ? 'BloodGroup is mandatory': null,
                 onChanged: (val){
-                setState(() => bloodgroup = val);}
+                  setState(() => bloodgroup = val);}
+            ),
+            TextFormField(
+                style: TextStyle(fontSize: 25.0),
+                decoration: const InputDecoration(
+                  hintText: 'Enter your Age',
+                  labelText: 'Age',
                 ),
+                validator: (val) => val.isEmpty ? 'Age is mandatory': null,
+                onChanged: (val){
+                  setState(() => age = val);}
+            ),
             TextFormField(
                 style: TextStyle(fontSize: 25.0),
-              decoration: const InputDecoration(
-                hintText: 'Enter your Age',
-                labelText: 'Age',
-              ),
-              validator: (val) => val.isEmpty ? 'Age is mandatory': null,
-              onChanged: (val){
-              setState(() => age = val);}
-              ),
-            TextFormField(
-                style: TextStyle(fontSize: 25.0),
-              decoration: const InputDecoration(
-                hintText: 'Enter your PhoneNo',
-                labelText: 'PhoneNo',
-              ),
-              validator: (val) => val.isEmpty ? 'Phoneno is mandatory': null,
-              onChanged: (val){
-              setState(() => phoneno = val);}
-              ),
+                decoration: const InputDecoration(
+                  hintText: 'Enter your PhoneNo',
+                  labelText: 'PhoneNo',
+                ),
+                validator: (val) => val.isEmpty ? 'Phoneno is mandatory': null,
+                onChanged: (val){
+                  setState(() => phoneno = val);}
+            ),
             RaisedButton(
-              color: Colors.red[900],
-              child: Text(
-                'Submit',
-                style: TextStyle(color: Colors.white,fontSize: 25.0),
-              ),
-              onPressed: () {
-                if (_formKey1.currentState.validate()) {
-                  return showDialog(
-                      context: context,
-                      builder: (ctx) =>AlertDialog(
-                           title: Text("Profile Details"),
+                color: Colors.red[900],
+                child: Text(
+                  'Submit',
+                  style: TextStyle(color: Colors.white,fontSize: 25.0),
+                ),
+                onPressed: () {
+                  if (_formKey1.currentState.validate()) {
+                    profile.push().set({
+                      "name": name,
+                      "location": location ,
+                      "bloodgroup": bloodgroup,
+                      "phone":phoneno,
+                      "age":age,
+                    }).then((_) {
+                      showDialog(
+                          context: context,
+                          builder: (ctx) =>AlertDialog(
+                            title: Text("Profile Details"),
                             content: Text("Data Saved"),
                             actions: [new FlatButton(child: new Text('OK'),
-                          onPressed: () {
-                          Navigator.of(context).pop();}
+                                onPressed: () {
+                                  Navigator.of(context).pop();}
 
-                          ),],
+                            ),],
 
-                            )
-                  );
-                  //Navigator.pushNamed(context,'/home_screen',arguments:{"name":myController.text});
+                          )
+                      );
+                    }).catchError((onError) {
+                      print(onError);
+                    });
+
+
+                  }
                 }
-              }
 
             ),
 
@@ -116,6 +123,6 @@ class _ProfilePageState extends State<ProfilePage> {
       ),
     );
 
-    }
   }
+}
 
