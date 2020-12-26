@@ -6,20 +6,28 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 
 class Chapter {
-  Chapter({this.courseId, this.grade, this.chapterName,this.link});
+  Chapter({this.courseId, this.grade, this.chapterName,this.desc,this.link,this.hasActivities,this.activityTitle,this.activityDesc});
   final int courseId;
   final int grade;
   final String chapterName;
+  final String desc;
   final String link;
+  final bool hasActivities;
+  final String activityTitle;
+  final String activityDesc;
+
 }
 List<Chapter> AllChapters = [
-  new Chapter(courseId: 0,grade: 3,chapterName: 'Numbers & numeration part 1', link: YoutubePlayer.convertUrlToId('https://youtu.be/YTeTAzZB4qc')),
+  new Chapter(courseId: 0,grade: 3,chapterName: 'Numbers & numeration part 1', link: YoutubePlayer.convertUrlToId('https://youtu.be/YTeTAzZB4qc'),),
+
   new Chapter(courseId: 0,grade: 3,chapterName: 'Numbers & numeration part 2', link: YoutubePlayer.convertUrlToId('https://youtu.be/zn0ZX8dwx3M')),
   new Chapter(courseId: 0,grade: 3,chapterName: 'Lesson 3', link: 'link'),
 
   new Chapter(courseId: 0,grade: 4,chapterName: 'Lesson 1', link: 'link'),
   new Chapter(courseId: 0,grade: 4,chapterName: 'Lesson 2', link: 'link'),
   new Chapter(courseId: 0,grade: 4,chapterName: 'Lesson 3', link: 'link'),
+
+  new Chapter(courseId: 3,grade: 6,chapterName: '5. Separation of substances', desc:'This chapter introduces you to methods of separation such as hand-picking, winnowing, threshing, sieving, sedimentation, decantation, filtration and evaporation. This chapter will make you understand the process of separation by using real-life examples, such as separating husk and stones from grains, separation of solids from liquids etc.', link: YoutubePlayer.convertUrlToId('https://www.youtube.com/watch?v=hGkc2BqhPEo'),hasActivities : true, activityTitle:'Chromatography', activityDesc:'Chromatography is a process which will be learned in higher classes. This process can be slightly demonstrated using a white petaled flower. Dip it in ink and after a few hours you can see that the ink is absorbed into the petal,in layers.'),
 ];
 class Course {
   final String courseName;
@@ -364,54 +372,131 @@ class MaterialScreen extends StatelessWidget {
             children: [
               // some widgets
               player,
-              Expanded(
-                child: Container(
-                  color: Colors.white,
-                  child: ListView(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              boxShadow: [new BoxShadow(
-                                color:  Colors.grey.withOpacity(0.8),
-                                offset: Offset(0,4),
-                                blurRadius: 8.0,
-                                spreadRadius: 0,
-                              ),]
-                          ),
-                          child: Padding(
-                              padding:EdgeInsets.symmetric(vertical: 15,horizontal: 30),
-                              child: Text(chapterArray[chapterIndex].chapterName.toUpperCase(),style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 20),textAlign: TextAlign.center,)
-                          ),
-                        ),
 
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
-                          decoration: BoxDecoration(
-                              color: Colors.white,
-                              boxShadow: [new BoxShadow(
-                                color:  Colors.grey.withOpacity(0.8),
-                                offset: Offset(0,4),
-                                blurRadius: 8.0,
-                                spreadRadius: 0,
-                              ),]
-                          ),
-                          child: Padding(
-                              padding:EdgeInsets.symmetric(vertical: 15,horizontal: 30),
-                              child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at massa rutrum, porta tortor id, porttitor eros. Suspendisse vitae ullamcorper nisi, sit amet consequat massa. Aenean tincidunt posuere tincidunt. Phasellus sed purus ultrices, volutpat nulla et, hendrerit justo. Proin faucibus nisi tempus, suscipit urna elementum, tempus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet pretium enim vel dignissim. Nullam luctus mollis nisl, at convallis risus varius a. Proin nec purus felis. Praesent ullamcorper mi a tincidunt dignissim. Praesent sed elementum dui. Vestibulum tempus, felis eu tempor hendrerit, diam ipsum lobortis sem, a eleifend quam enim ac mauris. Duis sit amet posuere tortor, sit amet blandit nunc. Sed hendrerit suscipit nisi, sit amet faucibus nunc accumsan id.",
-                                style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 17),)
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                )
+              GetVideoData(grade, courseId, chapterIndex,context),
               //some other widgets
             ],
           );
         }
 
+    );
+  }
+}
+Widget GetVideoData(int grade,int courseId, int chapterIndex, BuildContext context) {
+  var chapterArray =AllChapters.where((element) => element.courseId == courseId && element.grade == grade).toList();
+  if (chapterArray[chapterIndex].hasActivities == true)
+  {
+    return Expanded(
+
+      child: Container(
+
+        color: Colors.white,
+        child: ListView(
+          children: [
+
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [new BoxShadow(
+                    color:  Colors.grey.withOpacity(0.8),
+                    offset: Offset(0,4),
+                    blurRadius: 8.0,
+                    spreadRadius: 0,
+                  ),]
+              ),
+              child: Padding(
+                  padding:EdgeInsets.symmetric(vertical: 15,horizontal: 30),
+                  child: Text(chapterArray[chapterIndex].chapterName.toUpperCase(),style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 20),textAlign: TextAlign.center,)
+              ),
+            ),
+            Padding(
+              padding:EdgeInsets.symmetric(vertical: 15,horizontal: 30),
+              child: Column(
+                  children:[
+
+                    Text(chapterArray[chapterIndex].desc,
+                      style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 17),)
+                  ]
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [new BoxShadow(
+                    color:  Colors.grey.withOpacity(0.8),
+                    offset: Offset(0,4),
+                    blurRadius: 8.0,
+                    spreadRadius: 0,
+                  ),]
+              ),
+              child: Padding(
+                  padding:EdgeInsets.symmetric(vertical: 15,horizontal: 30),
+                  child: Column(
+                    children:[
+                      Text("Extra Activities",
+                        style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 10),
+                        child: Text(chapterArray[chapterIndex].activityTitle,
+                          style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 17,fontWeight: FontWeight.bold),textAlign: TextAlign.left,),
+                      ),
+                      Text(chapterArray[chapterIndex].activityDesc,
+                        style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 17),)
+                    ]
+                  ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+  else
+  {
+    return Expanded(
+      child: Container(
+        color: Colors.white,
+        child: ListView(
+          children: [
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 0,horizontal: 10),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [new BoxShadow(
+                    color:  Colors.grey.withOpacity(0.8),
+                    offset: Offset(0,4),
+                    blurRadius: 8.0,
+                    spreadRadius: 0,
+                  ),]
+              ),
+              child: Padding(
+                  padding:EdgeInsets.symmetric(vertical: 15,horizontal: 30),
+                  child: Text(chapterArray[chapterIndex].chapterName.toUpperCase(),style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 20),textAlign: TextAlign.center,)
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [new BoxShadow(
+                    color:  Colors.grey.withOpacity(0.8),
+                    offset: Offset(0,4),
+                    blurRadius: 8.0,
+                    spreadRadius: 0,
+                  ),]
+              ),
+              child: Padding(
+                  padding:EdgeInsets.symmetric(vertical: 15,horizontal: 30),
+                  child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at massa rutrum, porta tortor id, porttitor eros. Suspendisse vitae ullamcorper nisi, sit amet consequat massa. Aenean tincidunt posuere tincidunt. Phasellus sed purus ultrices, volutpat nulla et, hendrerit justo. Proin faucibus nisi tempus, suscipit urna elementum, tempus tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet pretium enim vel dignissim. Nullam luctus mollis nisl, at convallis risus varius a. Proin nec purus felis. Praesent ullamcorper mi a tincidunt dignissim. Praesent sed elementum dui. Vestibulum tempus, felis eu tempor hendrerit, diam ipsum lobortis sem, a eleifend quam enim ac mauris. Duis sit amet posuere tortor, sit amet blandit nunc. Sed hendrerit suscipit nisi, sit amet faucibus nunc accumsan id.",
+                    style: Theme.of(context).textTheme.headline5.copyWith(color: Colors.black,fontSize: 17),)
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
