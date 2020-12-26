@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="octisreg.css" />
+</head>
+<body>
+    
+<nav>    
+<ul>
+<li><img src="octis.jpg"/></li>
+  <li><a href="Octis.html">Home</a></li>
+  <li><a href="#news">Registration</a></li>
+  <li><a href="#contact">Hospitals</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul></nav>
+<form action="octisdate.html">
+    <div class="container">
+      <h1 >Register</h1>
+      <p>Please fill in this form to register for booking your ticket</p>
+      <hr>
+
+      <label for="name"><b>Enter Name</b></label>
+      <input type="text" placeholder="Enter your name" name="name" id="name" required>
+      <label for="age"><b>Enter age</b></label>
+      <input type="number" min="0" placeholder="Enter your age" name="age" id="age" required>
+      <fieldset data-role="controlgroup">
+        <legend>Choose your gender:</legend>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male" checked>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </fieldset>
+      <label for="email"><b>Enter Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" id="email" required>
+  
+      
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+  
+      <button type="submit" class="registerbtn">SUBMIT</button>
+    </div>
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+
+</body>
+</html>
+
+
+
+
