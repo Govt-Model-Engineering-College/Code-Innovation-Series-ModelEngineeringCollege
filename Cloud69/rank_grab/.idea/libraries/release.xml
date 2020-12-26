@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="release">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/edu_app/build/flutter_inappwebview/intermediates/transforms/r8/release/0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/edu_app/build/flutter_inappwebview/intermediates/transforms/r8/release/1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
