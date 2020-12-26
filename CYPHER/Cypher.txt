@@ -12,11 +12,11 @@ We, at Team Cypher, have addressed these issues and developed a robust applicati
 - Mute video and audio anytime
 - Real time chat
 - Real time Whiteboard for online teaching
+- Easy attendance option for teachers
+- Speech to text in chat for easily typing questions
 
 ### POSSIBLE UPCOMING FEATURES
 
-- Easy attendance option for teachers
-- Speech to text in chat for easily typing questions
 - Polling 
 - Authentication using Google account
 
