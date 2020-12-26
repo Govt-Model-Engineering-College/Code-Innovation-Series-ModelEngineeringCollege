@@ -1,0 +1,89 @@
+<%- include("./partials/header.ejs") %>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <span class="navbar-brand"><img class="nav-logo" alt="teachEasy_logo"
+                    src="assets/TeachEasy_logo.png" /></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div>
+                        <h2 class="display-4 main-heading"> TeachEasy </h2>
+                        <h3>The online teaching app of 2020</h3>
+                    </div>
+                    <div class="current-features">
+                        <h3>Current Features</h3>
+                        <ul class="current-features-list">
+                            <li>Real-time video calling</li>
+                            <li>Mute audio and video anytime</li>
+                            <li>Real-time Chat</li>
+                            <li>Real-time collaborative Whiteboard for online teaching</li>
+                            <li>Easy attendance count for teachers</li>
+                            <li>Speech-to-text in chat for typing questions easily</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Possible Upcoming Features</h4>
+                        <ul>
+                            <li>Polling feature</li>
+                            <li>Authentication using Google</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-wrap">
+                        <div class="tabs">
+                            <h3 class="signup-tab"><a class="active" href="#signup-tab-content">CREATE</a></h3>
+                            <h3 class="login-tab"><a href="#login-tab-content">JOIN</a></h3>
+                        </div>
+                        <div class="tabs-content">
+
+                            <div id="signup-tab-content" class="active">
+                                <form class="signup-form" action="/create" method="POST">
+                                    <input class="usernameInput input" id="user_email" name="name" type="text"
+                                        placeholder="Your name" autocomplete="off" required>
+                                    <input name="code" type="text" class="input" id="user_name" value="<%=id%>"
+                                        readonly>
+                                    <input type="submit" class="button" value="Create">
+                                </form>
+                            </div>
+
+                            <div id="login-tab-content">
+                                <form class="login-form" action="/join" method="POST">
+                                    <input class="usernameInput input" id="user_login" type="text" name="name"
+                                        placeholder="Your name" autocomplete="off" required>
+                                    <input type="text" class="input" id="user_pass" name="code"
+                                        placeholder="Enter room code" autocomplete="off" required>
+                                    <input type="submit" class="button" value="Join">
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            jQuery(document).ready(function ($) {
+                tab = $('.tabs h3 a');
+
+                tab.on('click', function (event) {
+                    event.preventDefault();
+                    tab.removeClass('active');
+                    $(this).addClass('active');
+
+                    tab_content = $(this).attr('href');
+                    $('div[id$="tab-content"]').removeClass('active');
+                    $(tab_content).addClass('active');
+                });
+            });
+        </script>
+        <!-- <h3><%=id%></h3> -->
+    </body>
+
+    </html>

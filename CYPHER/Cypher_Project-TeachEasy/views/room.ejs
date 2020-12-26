@@ -1,0 +1,163 @@
+<%- include("./partials/header.ejs") %>
+    <script>
+        const ROOM_ID = "<%= roomId %>"
+        const USERNAME = "<%= username %>"
+    </script>
+    </head>
+
+    <body>
+
+        <div class="main">
+            <div class="mainLeft">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div id="DrawingBoard" style="display: none;">
+
+                            <div id="canvasBlock">
+                                <canvas class="whiteboard"></canvas>
+                            </div>
+                            <div class="colors">
+                                <div class="color black"></div>
+                                <div class="color red"></div>
+                                <div class="color green"></div>
+                                <div class="color blue"></div>
+                                <div class="color white"></div>
+                                <!-- <button type="button" onclick="emitAndCanvas()" id="btnClear">CLEAR</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainVideos">
+                    <div id="videoGrid"> </div>
+
+                </div>
+
+
+                <!-- ============= -->
+                <div class="mainControls">
+                    <div class="mainControlsBlock">
+                        <div onclick="muteUnmute()" class="mainControlsButton mainMuteButton">
+                            <i class="fas fa-microphone"></i>
+                            <span>Mute</span>
+                        </div>
+                        <div onclick="playStop()" class="mainControlsButton mainVideoButton">
+                            <i class="fas fa-video"></i>
+                            <span>Video on</span>
+                        </div>
+                    </div>
+
+                    <div class="mainControlsBlock">
+                        <!-- <div class="mainControlsButton" id="shareScreen">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Share screen</span>
+                        </div> -->
+                        <div class="mainControlsButton" data-toggle="modal" data-target="#userInfo">
+                            <div>
+                                <i class="fas fa-user-friends"></i>
+                                <div>Participants</div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="userInfo" tabindex="-1" role="dialog"
+                            aria-labelledby="userInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="userInfoLabel">Participants: </h5>
+                                        <span id="participant-count"></span>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body users-modal-body">
+                                        <ul id="users">
+                                        </ul>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h5>Find absentees</h5>
+                                        <p>Now you can easily find all absentees. Just upload a text file containing the
+                                            list of all students and we'll take the attendance for you :)</p>
+                                        <input type="file" name="inputfile" id="inputfile">
+                                        <button id="updateAttendance" class="hidden"
+                                            onclick="calculateAttendance()">Update</button>
+                                        <h6 id="absenteeCount"></h6>
+                                        <div class="absentee-block">
+                                            <ul id="absentees"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mainControlsButton" data-toggle="modal" data-target="#roomInfo">
+                            <div>
+                                <i class="fas fa-info-circle"></i>
+                                <div>Info</div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="roomInfo" tabindex="-1" role="dialog"
+                            aria-labelledby="roomInfoLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="roomInfoLabel">Meeting info</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <span>Room code: <input type="text" value="<%= roomId%>" id="myInput">
+                                        </span>
+                                        <button onclick="copyMeetingCode()" id="copyBtn">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn close-btn" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div onClick="enableDrawing()" class="mainControlsButton" id="enableDrawingBoard">
+                            <i class="fas fa-record-vinyl"></i>
+                            <span>Toggle whiteboard</span>
+                        </div>
+                    </div>
+
+                    <div class="mainControlsBlock">
+                        <a class="leaveMeetingLink" href="/">
+                            <div class="mainControlsButtonEndMeeting">
+                                <span class="leaveMeeting">End
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="mainRight">
+                <div class="mainHeader">
+                    <h6>Chat</h6>
+                </div>
+                <div class="mainChatWindow">
+                    <ul class="messagesContainer">
+                    </ul>
+                </div>
+                <hr />
+                <div class="mainMessageContainer">
+
+                    <input id="chatMessage" type="text" placeholder="Type message here...">
+                </div>
+                <hr />
+                <button type="button" class="speech-btn" onclick="recongnizeSpeech()">Speak to type</button> <span
+                    id="action"></span>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+        <script src="/js/drawing.js"></script>
+    </body>
+
+    </html>
